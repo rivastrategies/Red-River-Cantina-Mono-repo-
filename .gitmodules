@@ -1,0 +1,7 @@
+[submodule "LeagueCity/Red-River-Cantina-Static-V2"]
+	path = LeagueCity/Red-River-Cantina-Static-V2
+	url = https://github.com/rivastrategies/Red-River-Cantina-Static-V2.git
+
+[submodule "Richmond/Red-River-Cantina-Static"]
+	path = Richmond/Red-River-Cantina-Static
+	url = https://github.com/rivastrategies/Red-River-Cantina-Static.git
