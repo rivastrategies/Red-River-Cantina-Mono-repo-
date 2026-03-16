@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red River Cantina | Our Locations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./LeagueCity/Red-River-Cantina-Static-V2/styles.css" />
+    <link rel="stylesheet" href="./LeagueCity/Red-River-Cantina-Static-V2/cantina-theme.css" />
+    <style>
+      /* ── Locations page ── */
+      .locations-hero {
+        background: linear-gradient(135deg, #0f766e, #115e59);
+        padding: 64px 20px 56px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .locations-hero h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin: 0 0 10px;
+      }
+
+      .locations-hero p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+        opacity: 0.88;
+        margin: 0;
+      }
+
+      .locations-section {
+        background: #f7f3ea;
+        padding: 72px 20px 80px;
+      }
+
+      .locations-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .location-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 52px 36px 44px;
+        transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+        border: 2px solid transparent;
+        color: inherit;
+      }
+
+      .location-card:hover,
+      .location-card:focus-visible {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 48px rgba(15, 118, 110, 0.18);
+        border-color: #0f766e;
+        outline: none;
+      }
+
+      .location-card img {
+        width: 190px;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 32px;
+      }
+
+      .location-card-name {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.35rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #243238;
+        text-align: center;
+        margin: 0 0 6px;
+      }
+
+      .location-card-address {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.93rem;
+        color: #5a6a70;
+        text-align: center;
+        margin: 0 0 2px;
+      }
+
+      .location-card-city {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: #0f766e;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        text-align: center;
+        margin: 0 0 8px;
+      }
+
+      .location-card-phone {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.93rem;
+        color: #5a6a70;
+        text-align: center;
+        margin: 0 0 28px;
+      }
+
+      .location-card-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #0f766e, #115e59);
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        padding: 12px 30px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: auto;
+        transition: opacity 0.15s ease;
+      }
+
+      .location-card:hover .location-card-btn {
+        opacity: 0.85;
+      }
+
+      @media (max-width: 640px) {
+        .locations-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .location-card {
+          padding: 40px 28px 36px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+
+      <!-- Hero Banner -->
+      <section class="locations-hero" aria-label="Our Locations">
+        <h1>Our Locations</h1>
+        <p>Find a Red River Cantina near you</p>
+      </section>
+
+      <!-- Location Cards -->
+      <section class="locations-section" aria-label="Choose a location">
+        <div class="locations-grid">
+
+          <!-- League City -->
+          <a class="location-card" href="./LeagueCity/Red-River-Cantina-Static-V2/index.html" aria-label="Red River Cantina League City">
+            <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina League City" />
+            <p class="location-card-name">Red River Cantina</p>
+            <p class="location-card-address">1911 E. Main St. Suite A</p>
+            <p class="location-card-city">League City, TX 77573</p>
+            <p class="location-card-phone">281-557-8156</p>
+            <span class="location-card-btn">Visit This Location</span>
+          </a>
+
+          <!-- Richmond -->
+          <a class="location-card" href="./Richmond/Red-River-Cantina-Static/index.html" aria-label="Red River Cantina Richmond">
+            <img src="./Richmond/Red-River-Cantina-Static/rrcLogo (1).png" alt="Red River Cantina Richmond" />
+            <p class="location-card-name">Red River Cantina</p>
+            <p class="location-card-address">19220 W. Bellfort Blvd.</p>
+            <p class="location-card-city">Richmond, TX 77407</p>
+            <p class="location-card-phone">346-279-1192</p>
+            <span class="location-card-btn">Visit This Location</span>
+          </a>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="brand-footer">
+      <div class="container footer-brands">
+        <div class="footer-brand-item">
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqLogo.png" alt="Red River Bar & Grill" class="footer-brand-logo" />
+          <p class="footer-brand-name">RED RIVER BAR &amp; GRILL</p>
+          <p class="footer-brand-location">LEAGUE CITY TX</p>
+        </div>
+        <div class="footer-brand-item">
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" />
+          <p class="footer-brand-name">RED RIVER CANTINA</p>
+          <p class="footer-brand-location">LEAGUE CITY TX</p>
+        </div>
+        <div class="footer-brand-item">
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" />
+          <p class="footer-brand-name">RED RIVER CANTINA</p>
+          <p class="footer-brand-location">RICHMOND TX</p>
+        </div>
+        <div class="footer-brand-item">
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="footer-brand-logo" />
+          <p class="footer-brand-name">RED RIVER BBQ &amp; BURGER</p>
+          <p class="footer-brand-location">KATY TX</p>
+        </div>
+        <div class="footer-brand-item">
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/kiersh co white trans.png" alt="Kiersh & Co." class="footer-brand-logo" />
+          <p class="footer-brand-name">KIERSH &amp; CO.</p>
+          <p class="footer-brand-location">CATERING &amp; EVENTS</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./LeagueCity/Red-River-Cantina-Static-V2/site.js"></script>
+  </body>
+</html>
