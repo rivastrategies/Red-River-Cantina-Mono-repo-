@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red River Cantina | Our Locations</title>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" />
+    <link rel="apple-touch-icon" href="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" />
+    
+    <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://transparenttextures.com" />
+    
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" fetchpriority="high" />
+    <link rel="preload" as="image" href="./Richmond/Red-River-Cantina-Static/rrcLogo (1).png" fetchpriority="high" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -164,7 +177,7 @@
 
           <!-- League City -->
           <a class="location-card" href="./LeagueCity/Red-River-Cantina-Static-V2/index.html" aria-label="Red River Cantina League City">
-            <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina League City" />
+            <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina League City" fetchpriority="high" decoding="async" />
             <p class="location-card-name">Red River Cantina</p>
             <p class="location-card-address">1911 E. Main St. Suite A</p>
             <p class="location-card-city">League City, TX 77573</p>
@@ -174,7 +187,7 @@
 
           <!-- Richmond -->
           <a class="location-card" href="./Richmond/Red-River-Cantina-Static/index.html" aria-label="Red River Cantina Richmond">
-            <img src="./Richmond/Red-River-Cantina-Static/rrcLogo (1).png" alt="Red River Cantina Richmond" />
+            <img src="./Richmond/Red-River-Cantina-Static/rrcLogo (1).png" alt="Red River Cantina Richmond" fetchpriority="high" decoding="async" />
             <p class="location-card-name">Red River Cantina</p>
             <p class="location-card-address">19220 W. Bellfort Blvd.</p>
             <p class="location-card-city">Richmond, TX 77407</p>
@@ -190,27 +203,27 @@
     <footer class="brand-footer">
       <div class="container footer-brands">
         <a href="https://redriverbbq.com/league-city/" class="footer-brand-item" target="_blank" rel="noopener">
-          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqLogo.png" alt="Red River Bar & Grill" class="footer-brand-logo" />
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqLogo.png" alt="Red River Bar & Grill" class="footer-brand-logo" loading="lazy" decoding="async" />
           <p class="footer-brand-name">RED RIVER BAR &amp; GRILL</p>
           <p class="footer-brand-location">LEAGUE CITY TX</p>
         </a>
         <div class="footer-brand-item">
-          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" />
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" loading="lazy" decoding="async" />
           <p class="footer-brand-name">RED RIVER CANTINA</p>
           <p class="footer-brand-location">LEAGUE CITY TX</p>
         </div>
         <div class="footer-brand-item">
-          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" />
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" loading="lazy" decoding="async" />
           <p class="footer-brand-name">RED RIVER CANTINA</p>
           <p class="footer-brand-location">RICHMOND TX</p>
         </div>
         <a href="https://redriverbbq.com/katy/" class="footer-brand-item" target="_blank" rel="noopener">
-          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="footer-brand-logo" />
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="footer-brand-logo" loading="lazy" decoding="async" />
           <p class="footer-brand-name">RED RIVER BBQ &amp; BURGER</p>
           <p class="footer-brand-location">KATY TX</p>
         </a>
         <div class="footer-brand-item">
-          <img src="./LeagueCity/Red-River-Cantina-Static-V2/kiersh co white trans.png" alt="Kiersh & Co." class="footer-brand-logo" />
+          <img src="./LeagueCity/Red-River-Cantina-Static-V2/kiersh co white trans.png" alt="Kiersh & Co." class="footer-brand-logo" loading="lazy" decoding="async" />
           <p class="footer-brand-name">KIERSH &amp; CO.</p>
           <p class="footer-brand-location">CATERING &amp; EVENTS</p>
         </div>
@@ -218,5 +231,16 @@
     </footer>
 
     <script src="./LeagueCity/Red-River-Cantina-Static-V2/site.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
   </body>
 </html>
