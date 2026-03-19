@@ -1,0 +1,607 @@
+/* Menu Page Styles */
+
+.menu-page {
+  background: #f8f8f8;
+  padding: 2rem 0 0;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--chili);
+  text-transform: uppercase;
+  margin: 1.5rem 0 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.menu-section {
+  background: white;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: var(--chili);
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--sun);
+}
+
+.section-title.fancy {
+  font-family: Georgia, serif;
+  font-style: italic;
+  text-transform: none;
+  font-size: 2.5rem;
+  color: var(--chili);
+}
+
+.section-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0.5rem 0 1.5rem;
+  font-style: italic;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--teal-mid);
+  font-style: italic;
+  margin: -0.5rem 0 1rem;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.menu-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.menu-item h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.menu-item h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: var(--chili);
+  margin: 0 0 0.3rem;
+  text-transform: uppercase;
+}
+
+.menu-item .description {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.3rem 0;
+}
+
+.menu-item .price {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.menu-item .price-line {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.menu-item .add-on {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.2rem 0;
+  font-style: italic;
+}
+
+.menu-item.highlight {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(245, 158, 11, 0.05));
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.new-badge {
+  background: var(--chili);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.guest-favorite {
+  color: var(--chili);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Combinados Section */
+.combinados-section {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.05), rgba(15, 118, 110, 0.03));
+  border: 2px dotted var(--teal-mid);
+}
+
+.combo-pricing {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.combo-option {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.combo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.subsection-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  color: var(--sun);
+  text-align: center;
+  margin: 2rem 0 1rem;
+  border-top: 2px solid var(--sun);
+  padding-top: 1rem;
+}
+
+/* Fajitas Table */
+.fajitas-table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fajitas-table thead {
+  background: linear-gradient(135deg, var(--teal-deep), var(--teal-mid));
+  color: white;
+}
+
+.fajitas-table th {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fajitas-table th .subtitle {
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fajitas-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.fajitas-table td.item-name {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: var(--chili);
+  font-weight: 600;
+}
+
+.fajitas-table tbody tr:hover {
+  background: rgba(251, 191, 36, 0.05);
+}
+
+/* Additions Grid */
+.additions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-item-inline {
+  padding: 0.75rem;
+  background: rgba(245, 158, 11, 0.05);
+  border-left: 3px solid var(--sun);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Family Platters */
+.family-platter-section {
+  background: linear-gradient(135deg, rgba(204, 0, 0, 0.05), rgba(234, 68, 68, 0.03));
+}
+
+.platter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.platter-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid var(--sun);
+}
+
+.platter-item h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  color: var(--chili);
+  margin-bottom: 1rem;
+}
+
+.platter-item p {
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.platter-item .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+  margin-top: 1rem;
+}
+
+/* Soup & Salad Section */
+.soup-salad-section {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(22, 163, 74, 0.05));
+}
+
+.dressing-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Seafood Section */
+.seafood-section {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(3, 105, 161, 0.05));
+  border: 2px solid rgba(14, 165, 233, 0.3);
+}
+
+/* Desserts Grid */
+.desserts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Lunch Section */
+.lunch-section {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
+}
+
+.red-text {
+  color: var(--chili);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.lunch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.lunch-category {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--teal-deep);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--teal-mid);
+}
+
+.lunch-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+}
+
+.lunch-note.bottom-note {
+  margin: 1.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.menu-item-compact {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.combo-pricing-lunch {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+/* Street Tacos Highlight */
+.street-taco {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(239, 68, 68, 0.05));
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.menu-date {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: var(--ink);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .combo-grid,
+  .additions-grid,
+  .platter-grid,
+  .desserts-grid,
+  .lunch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fajitas-table {
+    font-size: 0.9rem;
+  }
+
+  .fajitas-table th,
+  .fajitas-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title.fancy {
+    font-size: 1.8rem;
+  }
+}
+
+/* Private Events Styles */
+.menu-intro {
+  background: #f8f8f8;
+  padding: 4rem 0;
+}
+
+.intro-kicker {
+  color: var(--teal-mid);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.intro-title {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--chili);
+  text-align: center;
+  margin: 0 0 2rem;
+  line-height: 1.2;
+}
+
+.intro-lede {
+  font-size: 1.1rem;
+  color: var(--muted);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.intro-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.intro-card h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: var(--teal-deep);
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.intro-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.menu-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.menu-grid-item {
+  background: rgba(245, 158, 11, 0.05);
+  padding: 1rem;
+  border-left: 3px solid var(--sun);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.menu-cta-card {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.cta-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 1rem;
+}
+
+.cta-title {
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.cta-code {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.section-note.emphasis {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* Party Room Menu Styles */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-item-card {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.menu-item-card h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.menu-item-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.menu-time {
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.hors-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.hors-list li {
+  color: var(--muted);
+  font-size: 0.95rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.hors-list li:before {
+  content: "•";
+  color: var(--teal-mid);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hors-list {
+    grid-template-columns: 1fr;
+  }
+}

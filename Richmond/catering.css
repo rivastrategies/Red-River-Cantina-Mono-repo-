@@ -1,0 +1,1012 @@
+/* Catering Page Specific Styles */
+
+/* Carousel Styles */
+@keyframes carouselSlide {
+  0% { opacity: 0; }
+  2% { opacity: 1; }
+  12.5% { opacity: 1; }
+  14.5% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes dotPulse1 {
+  0% { opacity: 1; }
+  12.5% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes dotPulse2 {
+  0% { opacity: 0.4; }
+  12.5% { opacity: 1; }
+  25% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse3 {
+  0% { opacity: 0.4; }
+  25% { opacity: 1; }
+  37.5% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse4 {
+  0% { opacity: 0.4; }
+  37.5% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse5 {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  62.5% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse6 {
+  0% { opacity: 0.4; }
+  62.5% { opacity: 1; }
+  75% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse7 {
+  0% { opacity: 0.4; }
+  75% { opacity: 1; }
+  87.5% { opacity: 0.4; }
+  100% { opacity: 0.4; }
+}
+
+@keyframes dotPulse8 {
+  0% { opacity: 0.4; }
+  87.5% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+.catering-hero-carousel {
+  position: relative;
+  overflow: hidden;
+  background: #1a2a35;
+  height: 450px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: carouselSlide 24s infinite;
+}
+
+.slide-1 {
+  animation-delay: 0s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-1-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-2 {
+  animation-delay: 3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-7-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-3 {
+  animation-delay: 6s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-9-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-4 {
+  animation-delay: 9s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-13-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-5 {
+  animation-delay: 12s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-17-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-6 {
+  animation-delay: 15s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-19-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-7 {
+  animation-delay: 18s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-23-800x533%20(1).webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-8 {
+  animation-delay: 21s;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url('./catering-images1/Red-River-Catering-39-800x533.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
+}
+
+.carousel-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 900px;
+}
+
+.carousel-content h1 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+.slide-tagline {
+  margin: 1.2rem 0 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.carousel-content .btn {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  z-index: 3;
+}
+
+.book-catering-cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.95), rgba(15, 118, 110, 0.75));
+  color: #ffffff;
+}
+
+.book-catering-cta .cta-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.book-catering-cta .cta-card h2 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  text-transform: uppercase;
+}
+
+.book-catering-cta .cta-card p {
+  margin: 0;
+  font-size: 1.07rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot-1 {
+  animation: dotPulse1 24s infinite;
+}
+
+.dot-2 {
+  animation: dotPulse2 24s infinite;
+}
+
+.dot-3 {
+  animation: dotPulse3 24s infinite;
+}
+
+.dot-4 {
+  animation: dotPulse4 24s infinite;
+}
+
+.dot-5 {
+  animation: dotPulse5 24s infinite;
+}
+
+.dot-6 {
+  animation: dotPulse6 24s infinite;
+}
+
+.dot-7 {
+  animation: dotPulse7 24s infinite;
+}
+
+.dot-8 {
+  animation: dotPulse8 24s infinite;
+}
+
+/* Margarita Highlight */
+.margarita-highlight {
+  color: #22c55e;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.catering-features {
+  background: #fff;
+  padding: 3.5rem 0;
+}
+
+.catering-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-box {
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--sun), var(--teal-mid));
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.feature-fiesta {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(251, 191, 36, 0.04));
+  border-color: transparent;
+}
+
+.feature-service {
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(20, 184, 166, 0.04));
+  border-color: transparent;
+}
+
+.feature-notes {
+  background: linear-gradient(135deg, rgba(204, 0, 0, 0.06), rgba(204, 0, 0, 0.02));
+  border-color: transparent;
+}
+
+.feature-box h3 {
+  margin: 0 0 0.6rem;
+  font-family: "Oswald", sans-serif;
+  color: #cc0000;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.feature-box ul {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  list-style: disc;
+  color: #2a3a45;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.feature-box ul li {
+  margin: 0.3rem 0;
+}
+
+.feature-box p {
+  margin: 0.5rem 0;
+  color: #2a3a45;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.menu-section {
+  padding: 2.8rem 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.menu-section:last-of-type {
+  border-bottom: none;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.menu-section h2 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #cc0000;
+  line-height: 1;
+}
+
+.menu-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #2a3a45;
+}
+
+.portion {
+  display: block;
+}
+
+.menu-description {
+  margin: 0;
+  color: #495665;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.additions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+.addition-item {
+  padding: 0.8rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 3px solid var(--sun);
+}
+
+.addition-item h4 {
+  margin: 0;
+  color: #1a2a35;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.addition-item p {
+  margin: 0.3rem 0 0;
+  color: #2a3a45;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+}
+
+.menu-column h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+.menu-column:first-child {
+  border-right: 2px dashed #d8d8d8;
+  padding-right: 2rem;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0 0 0 1.4rem;
+  list-style: disc;
+  color: #2a3a45;
+}
+
+.menu-list li {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.menu-column h3 {
+  margin: 1.2rem 0 0.4rem;
+  font-family: "Oswald", sans-serif;
+  color: #1a2a35;
+  font-size: 1rem;
+}
+
+.menu-column .desc {
+  color: #495665;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.menu-column .pricing {
+  margin: 0.3rem 0;
+  color: #2a3a45;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.station-intro {
+  margin: 1rem 0;
+  color: #495665;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.station-note {
+  margin: 0.6rem 0 1rem;
+  color: #495665;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.stations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.2rem 0 0;
+}
+
+.station-group {
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #f9f9f9, #fafafa);
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+
+.station-group h4 {
+  margin: 0 0 0.8rem;
+  color: var(--teal-deep);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.station-group ul {
+  margin: 0;
+  padding: 0 0 0 1.4rem;
+  list-style: disc;
+  font-size: 0.9rem;
+  color: #2a3a45;
+  line-height: 1.5;
+}
+
+.appetizer-items,
+.beverage-items,
+.dessert-items {
+  margin: 1rem 0 0;
+}
+
+.app-item,
+.bev-item,
+.dessert-item {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--teal-deep);
+  margin-bottom: 0.8rem;
+}
+
+.app-item h4,
+.bev-item h4,
+.dessert-item h4 {
+  margin: 0 0 0.5rem;
+  color: #1a2a35;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.app-item ul,
+.bev-item ul {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  list-style: disc;
+  font-size: 0.9rem;
+  color: #2a3a45;
+}
+
+.app-item .note,
+.bev-item .note {
+  margin: 0.4rem 0 0;
+  color: #495665;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.bar-note {
+  margin: 0.6rem 0;
+  color: #495665;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.bar-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  margin: 2rem 0 0;
+}
+
+.bar-package {
+  padding: 1.8rem;
+  background: linear-gradient(135deg, #fbf7ef 0%, #f2ede4 100%);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bar-package::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--chili), var(--sun));
+}
+
+.bar-package:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(204, 0, 0, 0.15);
+}
+
+.bar-package h3 {
+  margin: 0 0 0.6rem;
+  color: var(--chili);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bar-package p {
+  margin: 0.4rem 0;
+  color: #2a3a45;
+  font-size: 0.95rem;
+}
+
+.bar-package ul {
+  margin: 0.8rem 0 0;
+  padding: 0 0 0 1.4rem;
+  list-style: disc;
+  font-size: 0.9rem;
+  color: #2a3a45;
+}
+
+.bar-package .note {
+  margin: 0.6rem 0 0;
+  color: #495665;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.fiesta-intro {
+  margin: 0;
+  color: var(--chili);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.fiesta-note {
+  margin: 0.6rem 0 1.5rem;
+  color: #495665;
+  font-size: 0.9rem;
+}
+
+.fiesta-packs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.fiesta-category {
+  padding: 1.2rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.fiesta-category h2 {
+  font-size: 1.45rem;
+  color: var(--teal-deep);
+  margin-bottom: 0.6rem;
+}
+
+.fiesta-category .pack-list {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  list-style: disc;
+  font-size: 0.85rem;
+  color: #2a3a45;
+  line-height: 1.4;
+}
+
+.pack-options {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #d8d8d8;
+}
+
+.pack-heading {
+  margin: 0.55rem 0 0.15rem;
+  color: #1a2a35;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.pack-price {
+  margin: 0.2rem 0 0;
+  color: var(--chili);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.app-packs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.app-pack {
+  padding: 0.95rem;
+  background: #f9f9f9;
+  border-left: 3px solid var(--sun);
+  border-radius: 6px;
+}
+
+.app-pack h4 {
+  margin: 0 0 0.35rem;
+  color: #1a2a35;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.app-pack p {
+  margin: 0.2rem 0;
+  color: #2a3a45;
+  font-size: 0.85rem;
+}
+
+.app-pack .price {
+  color: var(--chili);
+  font-weight: 700;
+}
+
+.bulk-items-grid,
+.bulk-fajitas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.bulk-item,
+.bulk-fajita {
+  padding: 0.85rem;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+.bulk-item h4,
+.bulk-fajita h4 {
+  margin: 0 0 0.35rem;
+  color: #1a2a35;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.bulk-item p,
+.bulk-fajita p {
+  margin: 0;
+  color: #2a3a45;
+  font-size: 0.82rem;
+}
+
+.bulk-beverages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.bev-bulk {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 3px solid var(--teal-deep);
+  border-radius: 6px;
+}
+
+.bev-bulk h4 {
+  margin: 0 0 0.3rem;
+  color: #1a2a35;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bev-bulk p {
+  margin: 0.2rem 0;
+  color: #2a3a45;
+  font-size: 0.85rem;
+}
+
+.bev-bulk .price {
+  color: var(--chili);
+  font-weight: 700;
+}
+
+.margarita-machines {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+}
+
+.margarita-option {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0fff4 0%, #ecfdf5 100%);
+  border: none;
+  border-left: 4px solid #22c55e;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.margarita-option:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.2);
+}
+
+.margarita-option h4 {
+  margin: 0 0 0.5rem;
+  color: #22c55e;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.margarita-option p {
+  margin: 0;
+  color: #2a3a45;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.menu-contact {
+  background: linear-gradient(135deg, #f7f3ea, #f0ebe2);
+  border-top: 3px solid var(--sun);
+  border-bottom: none !important;
+}
+
+.contact-intro {
+  margin: 0.8rem 0;
+  text-align: center;
+  color: #495665;
+  font-size: 0.95rem;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin: 1.5rem 0 0;
+}
+
+.contact-method {
+  padding: 1.2rem;
+  background: #fff;
+  border: 2px solid var(--teal-deep);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-method h4 {
+  margin: 0 0 0.4rem;
+  color: var(--teal-deep);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.contact-method p {
+  margin: 0;
+  color: #1a2a35;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Section Dividers for Full-Service vs Fiesta Packs */
+.catering-section-divider {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.catering-section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--teal-mid), transparent);
+}
+
+.full-service-header {
+  background: #f8f8f8;
+}
+
+.fiesta-packs-header {
+  background: #fff;
+  margin-top: 3rem;
+}
+
+.section-divider-title {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--chili);
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-divider-subtitle {
+  font-size: 1.25rem;
+  color: var(--teal-deep);
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.section-divider-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .catering-hero-carousel {
+    height: 350px;
+  }
+
+  .carousel-content h1 {
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+  }
+
+  .slide-tagline {
+    font-size: 1rem;
+  }
+
+  .catering-features-grid,
+  .fiesta-packs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .menu-column:first-child {
+    border-right: none;
+    border-bottom: 2px dashed #d8d8d8;
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .stations-grid,
+  .bulk-items-grid,
+  .bulk-fajitas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bar-packages-grid,
+  .margarita-machines,
+  .app-packs-grid,
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .catering-hero-carousel {
+    height: 280px;
+  }
+
+  .carousel-slide {
+    background-position: center center !important;
+    background-size: cover !important;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .slide-tagline {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+  }
+
+  .carousel-indicators {
+    bottom: 1rem;
+    gap: 0.6rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .menu-header {
+    flex-direction: column;
+  }
+
+  .menu-pricing {
+    text-align: left;
+  }
+
+  .bulk-items-grid,
+  .bulk-fajitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

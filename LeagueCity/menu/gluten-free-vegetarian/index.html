@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red River Cantina | Gluten Free Menu</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../rrcLogo (1).png" />
+    <link rel="apple-touch-icon" href="../../rrcLogo (1).png" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://transparenttextures.com" />
+
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="../../RRCBrand.png" fetchpriority="high" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../cantina-theme.css" />
+    <link rel="stylesheet" href="../../menu.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <div class="container utility-inner">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="#" data-order-modal-trigger>Order Online</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+      <div class="branding-bar">
+        <div class="container branding-inner">
+          <a class="logo" href="../../" aria-label="Red River Cantina Home">
+            <img src="../../RRCBrand.png" alt="Red River Cantina" style="height: 80px; display: block;" fetchpriority="high" decoding="async">
+          </a>
+          <nav aria-label="Primary Navigation">
+            <ul class="nav-links">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Menus</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../dine-in/">DINE-IN MENU</a></li>
+                  <li><a href="../to-go/">TO-GO MENU</a></li>
+                  <li><a href="../gluten-free-vegetarian/">GLUTEN FREE | VEGETARIAN</a></li>
+                  <li><a href="../bar/">BAR MENU</a></li>
+                </ul>
+              </li>
+              <li><a href="../../catering/">Catering</a></li>
+              <li><a href="../../party-room/">Party Room</a></li>
+              <li><a href="../../careers/">Careers</a></li>
+              <li><a href="../../community/">Community</a></li>
+              <li><a href="../../reviews/">Reviews</a></li>
+            </ul>
+          </nav>
+          <a href="/" class="btn btn-outline btn-sm header-story-btn">Locations</a>
+          <a href="../../our-story/" class="btn btn-outline btn-sm header-story-btn">Our Story</a>
+          <a href="#" class="btn btn-modern btn-sm" data-order-modal-trigger>Order Online</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <a href="../../" class="mobile-menu-logo">
+          <img src="../../RRCBrand.png" alt="Red River Cantina" style="height: 50px;" decoding="async">
+        </a>
+        <button class="mobile-menu-close" aria-label="Close Menu">&times;</button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">Locations</a>
+        <a href="../../our-story/" class="mobile-menu-item">Our Story</a>
+        <a href="../dine-in/" class="mobile-menu-item">Dine-In Menu</a>
+        <a href="../to-go/" class="mobile-menu-item">To-Go Menu</a>
+        <a href="../gluten-free-vegetarian/" class="mobile-menu-item">Gluten Free | Vegetarian</a>
+        <a href="../bar/" class="mobile-menu-item">Bar Menu</a>
+        <a href="../../catering/" class="mobile-menu-item">Catering</a>
+        <a href="../../party-room/" class="mobile-menu-item">Party Room</a>
+        <a href="../../careers/" class="mobile-menu-item">Careers</a>
+        <a href="../../community/" class="mobile-menu-item">Community</a>
+        <a href="../../reviews/" class="mobile-menu-item">Reviews</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="#" class="mobile-menu-cta" data-order-modal-trigger>Order Online</a>
+        <div class="mobile-menu-links">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="menu-page">
+      <div class="container">
+        <h1 class="page-title" style="color: var(--chili);">Gluten Free Menu</h1>
+        <p class="section-note" style="text-align: center; font-size: 1.1rem; margin-bottom: 0.5rem;">
+          Our red table salsa, green sauce and tortilla chips are gluten free.
+        </p>
+        <p class="section-note" style="text-align: center; font-size: 1.1rem; color: var(--chili); font-weight: 600; margin-bottom: 2rem;">
+          No Substitutions or Modifications to the Gluten Free Menu please.
+        </p>
+
+        <!-- Antojitos Section -->
+        <section class="menu-section">
+          <h2 class="section-title">Antojitos</h2>
+
+          <div class="menu-item">
+            <h3>GUACAMOLE</h3>
+            <p class="description">Haas avocados blended with pico de gallo and freshly squeezed lime juice</p>
+            <p class="price-line">Reg 9.95 &nbsp; Lrg 14.25</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHILE CON QUESO</h3>
+            <p class="price-line">Reg 7.95 &nbsp; Lrg 13.75</p>
+            <p class="add-on"><em>Add Beef Picadillo +2</em></p>
+          </div>
+        </section>
+
+        <!-- Tex-Mex Favorites Section -->
+        <section class="menu-section">
+          <h2 class="section-title">Tex-Mex Favorites</h2>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS DE POLLO</h3>
+            <p class="description">Two ranchero chicken enchiladas topped with salsa verde and grated cheese. Served with cilantro rice and refried black beans</p>
+            <p class="price">14.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP BROCHETTE</h3>
+            <p class="description">Six jumbo Gulf shrimp, stuffed with Monterrey jack cheese, sliced jalape&ntilde;o and wrapped in bacon. Guacamole and pico de gallo on the side. Served with cilantro rice and refried black beans. This meal comes with substituted gluten free corn tortillas</p>
+            <p class="price">24.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TACO DINNER</h3>
+            <p class="description">Two crispy tacos loaded with beef picadillo, shredded lettuce, diced tomato and grated cheese. Served with cilantro rice and refried black beans</p>
+            <p class="price">13.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>FAJITA BOWL &ndash; Ranchero Chicken <span class="new-badge">New</span></h3>
+            <p class="description">Cilantro rice, black beans, shredded lettuce, queso blanco, guacamole, pico de gallo, Mexican crema, queso fresco, crispy tortilla strips and our shredded ranchero chicken</p>
+            <p class="price">15.95</p>
+          </div>
+        </section>
+
+        <!-- Sopas y Ensaladas Section -->
+        <section class="menu-section soup-salad-section">
+          <h2 class="section-title fancy">Sopas y Ensaladas</h2>
+
+          <div class="menu-item">
+            <h3>SOPA DE TORTILLA CON RANCHERO CHICKEN</h3>
+            <p class="description">A hearty Mexico City style tortilla soup with fresh carrots, zucchini, yellow squash, and tomatoes. Topped with ranchero chicken, Monterrey jack cheese, diced avocado and crispy tortilla strips</p>
+            <p class="price">13.25</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP ENSALADA</h3>
+            <p class="description">Spring mix, red onion, purple cabbage, radish, cherry tomatoes, sliced red bell pepper, avocado, strawberries, mango, pecans, queso fresco and grilled jumbo Gulf shrimp</p>
+            <p class="price">18.95</p>
+          </div>
+
+          <p class="dressing-note"><strong>Dressing Choices:</strong> Cilantro Lime Vinaigrette, Tequila Lime Vinaigrette, Balsamic Vinaigrette, Oil & Vinegar</p>
+        </section>
+
+        <!-- Sizzling Fajitas Section -->
+        <section class="menu-section">
+          <h2 class="section-title">Sizzling Fajitas</h2>
+
+          <div class="menu-item">
+            <h3>PECHUGA DE POLLO</h3>
+            <p class="description">No marinade on the chicken breast. Comes with guacamole, pico de gallo, Mexican butter, cilantro rice and refried black beans. Our homemade flour and corn tortillas are not gluten-free. This meal comes with substituted gluten free corn tortillas</p>
+            <p class="price">19.95</p>
+            <p class="add-on"><em>*Cook time 30 minutes</em></p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP FAJITAS</h3>
+            <p class="description">8pc fresh grilled shrimp with green & red bell peppers. Served with guacamole, pico de gallo, Mexican butter, cilantro rice and refried black beans. Our homemade flour and corn tortillas are not gluten-free. This meal comes with substituted gluten free corn tortillas</p>
+            <p class="price">21.95</p>
+          </div>
+        </section>
+
+        <hr style="border: none; border-top: 3px solid var(--chili); margin: 3rem 0;">
+
+        <!-- VEGETARIAN MENU SECTION -->
+        <h1 class="page-title" style="color: #16a34a; margin-top: 3rem;">Vegetarian Menu</h1>
+        <p class="section-note" style="text-align: center; font-size: 1.1rem; color: #16a34a; font-weight: 600; margin-bottom: 2rem;">
+          No Substitutions or Modifications to the Vegetarian Menu please.
+        </p>
+
+        <!-- Vegetarian Soups & Salads -->
+        <section class="menu-section soup-salad-section">
+          <h2 class="section-title" style="color: #16a34a;">Soups & Salads</h2>
+
+          <div class="menu-item">
+            <h3>VEGGIE SOPA DE TORTILLA</h3>
+            <p class="description">A hearty Mexico City style tortilla soup with fresh carrots, zucchini, yellow squash, and tomatoes. Topped with monterey jack cheese, diced avocado & crispy tortilla strips</p>
+            <p class="price">9.95</p>
+            <p class="add-on" style="color: var(--chili);">*Contains chicken stock.</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENSALADA DE CASA</h3>
+            <p class="description">Fresh greens topped with red onion, shredded carrots, cherry tomatoes, crispy tortilla strips and queso fresco</p>
+            <p class="price">6.95</p>
+            <p class="add-on"><strong>Dressing Choices:</strong> Cilantro Lime Vinaigrette, Tequila Lime Vinaigrette, Balsamic Vinaigrette, Oil & Vinegar, Ranch & Avocado Ranch</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>VEGGIE QUESADILLAS</h3>
+            <p class="description">Grilled zucchini, squash, green bell peppers, red bell peppers & red onions. Guacamole, sour cream & jalapenos</p>
+            <p class="price">13.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>VEGGIE FAJITA BOWL <span class="new-badge">New</span></h3>
+            <p class="description">Cilantro rice, black beans, shredded lettuce, queso blanco, guacamole, pico de gallo, Mexican crema, queso fresco, crispy tortilla strips and grilled zucchini, squash, bell peppers and red onions</p>
+            <p class="price">15.95</p>
+          </div>
+        </section>
+
+        <!-- Vegetarian Entr&ndash;es -->
+        <section class="menu-section">
+          <h2 class="section-title" style="color: #16a34a;">Entr&ndash;es</h2>
+
+          <div class="menu-item">
+            <h3>SIZZLING VEGGIE FAJITAS</h3>
+            <p class="description">Grilled zucchini, squash, red bell peppers, green bell peppers and red onions. Served with pico de gallo, guacamole, cilantro rice, black beans and your choice of flour or corn tortillas</p>
+            <p class="price">16.95</p>
+            <p class="add-on" style="color: var(--chili);">*Cilantro rice & black beans contain chicken stock</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>VEGGIE ENCHILADAS</h3>
+            <p class="description">Two enchiladas stuffed with grilled zucchini, squash, green bell peppers, red bell peppers, red onions and topped with our homemade sour cream sauce. Served with cilantro rice and refried black beans</p>
+            <p class="price">15.95</p>
+            <p class="add-on" style="color: var(--chili);">*Sour Cream Sauce, Cilantro rice & black beans contain chicken stock</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SIDE OF GRILLED VEGGIES</h3>
+            <p class="description">Grilled zucchini, squash, red bell peppers, green bell peppers & red onions</p>
+            <p class="price">4.95</p>
+          </div>
+        </section>
+
+        <div class="disclaimer">
+          <h3 style="color: var(--chili); margin-bottom: 1rem;">Gluten Free Menu Disclaimers</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            Red River Cantina cannot guarantee against the cross contamination of gluten-free products and products which contain gluten. This menu is offered only as a guideline of suggested menu items for people who need a wheat-wheat-free, gluten-free restricted menu. Our gluten-free menu items are prepared in a shared work area that also process wheat & gluten products. However small, there is always a chance that gluten-free items may come in contact with products containing gluten.
+          </p>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            Red River Cantina assumes no responsibility or liability for any errors in labeling or changes in ingredients or prepared products used in recipes and menu items that are the direct or indirect result of the actions and activities of the suppliers, distributors and purveyors of said ingredients and products.
+          </p>
+          <h3 style="color: #16a34a; margin: 2rem 0 1rem;">Vegetarian Menu Disclaimers</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            <strong>Please note:</strong> While we offer vegetarian options, our kitchen is not a dedicated vegetarian facility. Cross-contamination may occur during food preparation. If you have severe dietary restrictions or allergies, please inform your server so we can take extra precautions.
+          </p>
+          <h3 style="margin: 2rem 0 1rem;">General Food Safety</h3>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
+            Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. Before placing your order, please inform your server if a person in your party has an allergy.
+          </p>
+          <p class="menu-date">&frac12;RRC 11.2025</p>
+        </div>
+
+      </div>
+      <section class="info-band" aria-label="Location and Rewards">
+        <div class="container info-grid">
+          <article class="tile visit-tile">
+            <p class="tile-title">Visit Us</p>
+            <h3>Red River Cantina</h3>
+            <p>League City, Texas</p>
+            <p>1911 E. Main St. Suite A</p>
+            <p>League City, TX 77573</p>
+            <p>281-557-8156</p>
+            <p class="hours">Sunday &ndash; Thursday | 11:00 am &ndash; 9:00pm &ndash; Friday &amp; Saturday | 11:00 am &ndash; 10:00pm</p>
+            <a href="https://www.facebook.com/people/Red-River-Cantina-League-City/100061811121727/" class="social-link">Follow Us</a>
+          </article>
+
+          <article class="tile reward-tile">
+            <div class="reward-icon">⭐</div>
+            <h3>Rewards Program</h3>
+            <p>Earn points, unlock rewards, get a birthday bonus.</p>
+            <a href="https://www.toasttab.com/redrivercantina/rewardsSignup" class="join-btn">Join Now</a>
+          </article>
+
+          <article class="tile map-tile" aria-label="Map Preview">
+            <iframe
+              title="Red River Cantina League City Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=1911+E+Main+St+Suite+A,+League+City,+TX+77573&output=embed"
+              style="width: 100%; height: 100%; min-height: 200px; border: 0; border-radius: 8px;"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="brand-footer">
+      <div class="container footer-brands">
+        <a href="https://redriverbbq.com/league-city/" class="footer-brand-item" target="_blank" rel="noopener">
+          <img src="../../rrbbqLogo.png" alt="Red River Bar & Grill" class="footer-brand-logo" loading="lazy" decoding="async">
+          <p class="footer-brand-name">RED RIVER BAR & GRILL</p>
+          <p class="footer-brand-location">LEAGUE CITY TX</p>
+        </a>
+        <a href="/leaguecity/" class="footer-brand-item">
+          <img src="../../rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" loading="lazy" decoding="async">
+          <p class="footer-brand-name">RED RIVER CANTINA</p>
+          <p class="footer-brand-location">LEAGUE CITY TX</p>
+        </a>
+        <a href="/richmond/" class="footer-brand-item">
+          <img src="../../rrcLogo (1).png" alt="Red River Cantina" class="footer-brand-logo" loading="lazy" decoding="async">
+          <p class="footer-brand-name">RED RIVER CANTINA</p>
+          <p class="footer-brand-location">RICHMOND TX</p>
+        </a>
+        <a href="https://redriverbbq.com/katy/" class="footer-brand-item" target="_blank" rel="noopener">
+          <img src="../../rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="footer-brand-logo" loading="lazy" decoding="async">
+          <p class="footer-brand-name">RED RIVER BBQ & BURGER</p>
+          <p class="footer-brand-location">KATY TX</p>
+        </a>
+        <a href="https://kiershcateringevents.com/" class="footer-brand-item" target="_blank" rel="noopener">
+          <img src="../../kiersh co white trans.png" alt="Kiersh & Co." class="footer-brand-logo" loading="lazy" decoding="async">
+          <p class="footer-brand-name">KIERSH & CO.</p>
+          <p class="footer-brand-location">CATERING & EVENTS</p>
+        </a>
+      </div>
+      <div class="container footer-links">
+        <a href="../../careers/" class="footer-link-btn">CAREERS</a>
+        <a href="../../catering/" class="footer-link-btn">CATERING</a>
+        <a href="../../community/" class="footer-link-btn">COMMUNITY</a>
+        <a href="https://www.toasttab.com/redrivercantina/marketing-signup" class="footer-link-btn">E-CLUB</a>
+        <a class="footer-link-btn footer-facebook" href="https://www.facebook.com/people/Red-River-Cantina-League-City/100061811121727/" aria-label="Follow Red River Cantina on Facebook">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.3V12h2.2l-.35 3h-1.85v7A10 10 0 0 0 22 12Z"></path>
+            </svg>
+          </span>
+          <span>FACEBOOK</span>
+        </a>
+      </div>
+    </footer>
+
+    <a href="#" class="sticky-order-btn" data-order-modal-trigger="" aria-label="Order Online">Order Online</a>
+
+    <script src="../../site.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
+  
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://redrivercantina.com/league-city/#restaurant",
+      "name": "Red River Cantina",
+      "description": "Authentic Tex-Mex restaurant in League City, TX. Fresh fajitas, enchiladas, handcrafted margaritas, full bar, catering, and private party room. Serving the community since 2002.",
+      "url": "https://redrivercantina.com/league-city/",
+      "telephone": "+12815578156",
+      "priceRange": "$$",
+      "servesCuisine": [
+        "Tex-Mex",
+        "Mexican",
+        "American"
+      ],
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1911 E. Main St. Suite A",
+        "addressLocality": "League City",
+        "addressRegion": "TX",
+        "postalCode": "77573",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.5036,
+        "longitude": -95.0893
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "11:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:00",
+          "closes": "22:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/people/Red-River-Cantina-League-City/100061811121727/"
+      ],
+      "hasMenu": "https://redrivercantina.com/league-city/dine-in-menu.html",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "1389",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Menu",
+      "@id": "https://redrivercantina.com/league-city/gluten-free-menu.html",
+      "name": "Red River Cantina Gluten Free & Vegetarian Menu - League City",
+      "url": "https://redrivercantina.com/league-city/gluten-free-menu.html",
+      "inLanguage": "en-US",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Gluten Free Menu",
+          "description": "No substitutions or modifications. Our red table salsa, green sauce and tortilla chips are gluten free.",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Guacamole (GF)",
+              "description": "Haas avocados blended with pico de gallo and freshly squeezed lime juice",
+              "offers": {
+                "@type": "Offer",
+                "price": "9.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Chile con Queso (GF)",
+              "offers": {
+                "@type": "Offer",
+                "price": "7.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas de Pollo (GF)",
+              "description": "Two ranchero chicken enchiladas with salsa verde and grated cheese, cilantro rice and refried black beans",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Shrimp Brochette (GF)",
+              "description": "Six jumbo Gulf shrimp stuffed with Monterey jack cheese, jalapeno, wrapped in bacon. Served with cilantro rice and refried black beans",
+              "offers": {
+                "@type": "Offer",
+                "price": "24.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Taco Dinner (GF)",
+              "description": "Two crispy tacos loaded with beef picadillo, shredded lettuce, diced tomato and grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fajita Bowl - Ranchero Chicken (GF)",
+              "description": "Cilantro rice, black beans, shredded lettuce, queso blanco, guacamole, pico de gallo, Mexican crema, queso fresco, crispy tortilla strips and ranchero chicken",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Sopa de Tortilla con Ranchero Chicken (GF)",
+              "description": "Mexico City style tortilla soup with fresh vegetables, ranchero chicken, Monterey jack cheese, diced avocado and crispy tortilla strips",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.25",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Shrimp Ensalada (GF)",
+              "description": "Spring mix, red onion, purple cabbage, cherry tomatoes, avocado, strawberries, mango, pecans, queso fresco and grilled jumbo Gulf shrimp",
+              "offers": {
+                "@type": "Offer",
+                "price": "18.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Pechuga de Pollo (GF)",
+              "description": "Plain grilled chicken breast with guacamole, pico de gallo, cilantro rice and refried black beans with gluten free corn tortillas",
+              "offers": {
+                "@type": "Offer",
+                "price": "19.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Shrimp Fajitas (GF)",
+              "description": "8 fresh grilled shrimp with bell peppers, guacamole, pico de gallo, cilantro rice and refried black beans with gluten free corn tortillas",
+              "offers": {
+                "@type": "Offer",
+                "price": "21.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Vegetarian Menu",
+          "description": "No substitutions or modifications.",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Veggie Sopa de Tortilla",
+              "description": "Mexico City style tortilla soup with fresh vegetables, Monterey jack cheese, diced avocado & crispy tortilla strips",
+              "offers": {
+                "@type": "Offer",
+                "price": "9.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Ensalada de Casa",
+              "description": "Fresh greens with red onion, shredded carrots, cherry tomatoes, crispy tortilla strips and queso fresco",
+              "offers": {
+                "@type": "Offer",
+                "price": "6.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Veggie Quesadillas",
+              "description": "Grilled zucchini, squash, green & red bell peppers & red onions with guacamole, sour cream & jalapenos",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Veggie Fajita Bowl",
+              "description": "Cilantro rice, black beans, shredded lettuce, queso blanco, guacamole, pico de gallo, Mexican crema, queso fresco, crispy tortilla strips and grilled vegetables",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Sizzling Veggie Fajitas",
+              "description": "Grilled zucchini, squash, red & green bell peppers and red onions with pico de gallo, guacamole, cilantro rice and black beans",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Veggie Enchiladas",
+              "description": "Two enchiladas stuffed with grilled zucchini, squash, bell peppers, red onions and topped with sour cream sauce, cilantro rice and refried black beans",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Locations",
+          "item": "https://redrivercantina.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "League City",
+          "item": "https://redrivercantina.com/league-city/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gluten Free & Vegetarian Menu",
+          "item": "https://redrivercantina.com/league-city/gluten-free-menu.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </body>
+</html>

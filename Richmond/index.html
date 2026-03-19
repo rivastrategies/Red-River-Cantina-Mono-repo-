@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red River Cantina | Guest Reviews</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="rrcLogo (1).png" />
+    <link rel="apple-touch-icon" href="rrcLogo (1).png" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://transparenttextures.com" />
+    
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="RRCBrand.png" fetchpriority="high" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cantina-theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <div class="container utility-inner">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="#" data-order-modal-trigger>Order Online</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+      <div class="branding-bar">
+        <div class="container branding-inner">
+          <a class="logo" href="#" aria-label="Red River Cantina Home">
+            <img src="RRCBrand.png" alt="Red River Cantina" style="height: 80px; display: block;" fetchpriority="high" decoding="async">
+          </a>
+          <nav aria-label="Primary Navigation">
+            <ul class="nav-links">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Menus</a>
+                <ul class="dropdown-menu">
+                  <li><a href="menu/dine-in/">DINE-IN MENU</a></li>
+                  <li><a href="menu/to-go/">TO-GO MENU</a></li>
+                  <li><a href="menu/gluten-free-vegetarian/">GLUTEN FREE | VEGETARIAN</a></li>
+                  <li><a href="menu/bar/">BAR MENU</a></li>
+                </ul>
+              </li>
+              <li><a href="catering/">Catering</a></li>
+              <li><a href="party-room/">Party Room</a></li>
+              <li><a href="careers/">Careers</a></li>
+              <li><a href="community/">Community</a></li>
+              <li><a href="reviews/">Reviews</a></li>
+            </ul>
+          </nav>
+          <a href="/" class="btn btn-outline btn-sm header-story-btn">Locations</a>
+          <a href="our-story/" class="btn btn-outline btn-sm header-story-btn">Our Story</a>
+          <a href="#" class="btn btn-modern btn-sm" data-order-modal-trigger>Order Online</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <a href="./" class="mobile-menu-logo">
+          <img src="RRCBrand.png" alt="Red River Cantina" style="height: 50px;" decoding="async">
+        </a>
+        <button class="mobile-menu-close" aria-label="Close Menu">&times;</button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">Locations</a>
+        <a href="our-story/" class="mobile-menu-item">Our Story</a>
+        <a href="menu/dine-in/" class="mobile-menu-item">Dine-In Menu</a>
+        <a href="menu/to-go/" class="mobile-menu-item">To-Go Menu</a>
+        <a href="menu/gluten-free-vegetarian/" class="mobile-menu-item">Gluten Free | Vegetarian</a>
+        <a href="menu/bar/" class="mobile-menu-item">Bar Menu</a>
+        <a href="catering/" class="mobile-menu-item">Catering</a>
+        <a href="party-room/" class="mobile-menu-item">Party Room</a>
+        <a href="careers/" class="mobile-menu-item">Careers</a>
+        <a href="community/" class="mobile-menu-item">Community</a>
+        <a href="reviews/" class="mobile-menu-item">Reviews</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="#" class="mobile-menu-cta" data-order-modal-trigger>Order Online</a>
+        <div class="mobile-menu-links">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+    </div> 
+
+
+    <main>
+      <section class="home-hero-carousel" aria-label="Red River Cantina Carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide slide-1">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Sunshine & Patio Energy</p>
+              <h1>Fresh Tex-Mex, Margaritas & Good Times</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-2">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Authentic Flavors</p>
+              <h1>Where Every Meal Feels Like a Fiesta</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-3">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Family Tradition</p>
+              <h1>Serving Richmond Since 2002</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-4">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Fresh Daily</p>
+              <h1>Made From Scratch Every Day</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-5">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Signature Cocktails</p>
+              <h1>Handcrafted Margaritas & More</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-6">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Perfect Setting</p>
+              <h1>Dine In or Take Out</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-7">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Delicious Dishes</p>
+              <h1>Taste the Difference</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-8">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Traditional Recipes</p>
+              <h1>Flavors That Bring People Together</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-9">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Great Atmosphere</p>
+              <h1>Your Go-To Tex-Mex Destination</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-10">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Vibrant Dining</p>
+              <h1>Experience Authentic Tex-Mex</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-11">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Local Favorite</p>
+              <h1>More Than Just Great Food</h1>
+            </div>
+          </div>
+          <div class="carousel-slide slide-12">
+            <div class="slide-overlay"></div>
+            <div class="container carousel-content">
+              <p class="eyebrow">Special Occasions</p>
+              <h1>Perfect For Any Celebration</h1>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="dot dot-1 active" aria-label="Slide 1"></span>
+            <span class="dot dot-2" aria-label="Slide 2"></span>
+            <span class="dot dot-3" aria-label="Slide 3"></span>
+            <span class="dot dot-4" aria-label="Slide 4"></span>
+            <span class="dot dot-5" aria-label="Slide 5"></span>
+            <span class="dot dot-6" aria-label="Slide 6"></span>
+            <span class="dot dot-7" aria-label="Slide 7"></span>
+            <span class="dot dot-8" aria-label="Slide 8"></span>
+            <span class="dot dot-9" aria-label="Slide 9"></span>
+            <span class="dot dot-10" aria-label="Slide 10"></span>
+            <span class="dot dot-11" aria-label="Slide 11"></span>
+            <span class="dot dot-12" aria-label="Slide 12"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="heritage-section" aria-label="Our Heritage">
+        <div class="container">
+          <p class="heritage-kicker">Our Heritage</p>
+          <h2 class="heritage-title">Local Favorite Since 2002</h2>
+          <p class="heritage-copy">
+            Our Richmond location offers a family-friendly dining experience with spacious seating,
+            private event options, and fresh-made Tex-Mex favorites. Join us for lunch, dinner, and
+            catering for events of all sizes. We look forward to serving you soon!
+          </p>
+
+          <div class="heritage-feature-grid">
+            <article class="heritage-manager-card">
+              <img
+                src="./ShaneSwopeRRCRichmond.webp"
+                alt="Shane Swope - General Manager"
+              />
+              <h3>Shane Swope</h3>
+              <p class="manager-role">General Manager</p>
+            </article>
+
+            <div class="heritage-map-stack">
+              <article class="heritage-map-card" aria-label="Map">
+                <iframe
+                  title="Red River Cantina Richmond Map"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=19220+W+Bellfort+Blvd,+Richmond,+TX+77407&output=embed"
+                ></iframe>
+              </article>
+              <article class="quick-links-card">
+                <p>Quick Links</p>
+                <div class="quick-links-row">
+                  <a href="menu/dine-in/">Dine-In Menu</a>
+                  <a href="menu/to-go/">To-Go Menu</a>
+                  <a href="menu/gluten-free-vegetarian/">Gluten Free Menu</a>
+                  <a href="menu/bar/">Bar Menu</a>
+                  <a href="catering/">Catering</a>
+                  <a href="#" data-order-modal-trigger>Order Online</a>
+                  <a href="careers/">Careers</a>
+                  <a href="community/">Community</a>
+                  <a href="#" data-concerns-modal-trigger>Questions or Concerns?</a>
+              </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="heritage-values-grid">
+            <article class="value-card">
+              <div class="value-icon value-icon-red">&#127752;</div>
+              <h4>Tex-Mex Classics</h4>
+              <p>
+                From sizzling fajitas to enchiladas smothered in Momie's sauces, our menu celebrates
+                the bold Tex-Mex flavors guests crave.
+              </p>
+            </article>
+            <article class="value-card">
+              <div class="value-icon value-icon-yellow">&#127865;</div>
+              <h4>Handcrafted Margaritas</h4>
+              <p>Fresh-squeezed citrus and premium tequila anchor our signature house and seasonal margaritas.</p>
+            </article>
+            <article class="value-card">
+              <div class="value-icon value-icon-green">&#127881;</div>
+              <h4>Full-Service Catering</h4>
+              <p>Bring the cantina to any celebration with customizable catering, on-site grilling, and attentive staff.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" aria-label="Featured Customer Reviews">
+        <div class="container">
+          <header>
+            <h2>What Our Customers Say</h2>
+            <p class="rating-line">&#9733;&#9733;&#9733;&#9733;&#9733; <strong>4.3</strong> Google Reviews</p>
+            <p class="verify-line">Based on 1,389 verified reviews</p>
+          </header>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <header class="review-header">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Donald Cook</h3>
+                <p class="reviewer-meta">Local Guide &middot; 44 reviews &middot; 16 photos</p>
+                <time datetime="2024-06-15">8 months ago</time>
+              </header>
+              <blockquote class="review-text">
+                This is by far my most favorite Tex-Mex restaurant in the Richmond area. The fajitas are to die for, and the rest of the menu is not bad at all. I am a big fan of the top shelf margaritas. Love the atmosphere and service we receive. I've never had a complaint. This is an awesome place to meet up for after work drinks and some appetizers to catch up with each other and have a few laughs. Highly recommend.
+              </blockquote>
+            </article>
+
+            <article class="review-card">
+              <header class="review-header">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Phallen Boyd</h3>
+                <p class="reviewer-meta">Local Guide &middot; 26 reviews &middot; 36 photos</p>
+                <time datetime="2025-01-28">2 weeks ago</time>
+              </header>
+              <blockquote class="review-text">
+                Visited here yesterday for the first time. The hosts at the door were friendly and sat us immediately. Christian was our server and he was amazing. Very knowledgeable of the menu and provided us suggestions. He was very attentive and came by our table multiple times to make sure we were good. I had the pollo marisco and my husband had the build your combination platter.. we were both pleasantly surprised. The food and service was great.. we will definitely return.
+              </blockquote>
+            </article>
+
+            <article class="review-card">
+              <header class="review-header">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Kelly Chavez</h3>
+                <p class="reviewer-meta">2 reviews</p>
+                <time datetime="2025-01-15">a month ago</time>
+              </header>
+              <blockquote class="review-text">
+                Excellent service! Our server Jesus truly made our experience amazing. He was very caring, attentive to every detail, and always concerned about our needs and wants. He consistently gave the best recommendations for both food and drinks, and every suggestion was spot on. His professionalism and kindness stood out and made our visit unforgettable. I would absolutely request him as my server the next time I go.
+              </blockquote>
+            </article>
+          </div>
+
+          <div class="button-row">
+            <a href="reviews/" class="btn btn-sun">&#9733; See All Reviews</a>
+            <a href="reviews/" class="btn btn-modern">Read All 1,389 Reviews &rarr;</a>
+          </div>
+          
+          <p class="reviews-disclaimer">Reviews sourced from Google; displayed verbatim.</p>
+        </div>
+      </section>
+
+      <section class="info-band" aria-label="Location and Rewards">
+        <div class="container info-grid">
+          <article class="tile visit-tile">
+            <p class="tile-title">Visit Us</p>
+            <h3>Red River Cantina</h3>
+            <p>Richmond, Texas</p>
+            <p>19220 W. Bellfort Blvd.</p>
+            <p>Richmond, Texas 77407</p>
+            <p>346-279-1192</p>
+            <p class="hours">Sunday &ndash; Thursday | 11:00 am &ndash; 9:00pm &middot; Friday &amp; Saturday | 11:00 am &ndash; 10:00pm</p>
+            <a href="https://www.facebook.com/profile.php?id=100084192871053" class="social-link">Follow Us</a>
+          </article>
+
+          <article class="tile reward-tile">
+            <div class="reward-icon">&#127873;</div>
+            <h3>Rewards Program</h3>
+            <p>Earn points, unlock rewards, get a birthday bonus.</p>
+            <a href="https://www.toasttab.com/redrivercantina/rewardsSignup" class="join-btn">Join Now</a>
+          </article>
+
+          <article class="tile map-tile" aria-label="Map Preview">
+            <iframe
+              title="Red River Cantina Richmond Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=19220+W+Bellfort+Blvd,+Richmond,+TX+77407&output=embed"
+              style="width: 100%; height: 100%; min-height: 200px; border: 0; border-radius: 8px;"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="brand-footer">
+      <div class="container logos-row">
+        <a href="https://redriverbbq.com/league-city/" class="location-logo" target="_blank" rel="noopener">
+          <img src="rrbbqLogo.png" alt="Red River Bar & Grill" class="logo-image" loading="lazy" decoding="async">
+          <div class="location-text">Red River Bar & Grill<br>League City TX</div>
+        </a>
+        <a href="/leaguecity/" class="location-logo">
+          <img src="RRCBrand.png" alt="Red River Cantina" class="logo-image" loading="lazy" decoding="async">
+          <div class="location-text">Red River Cantina<br>League City TX</div>
+        </a>
+        <a href="/richmond/" class="location-logo">
+          <img src="RRCBrand.png" alt="Red River Cantina" class="logo-image" loading="lazy" decoding="async">
+          <div class="location-text">Red River Cantina<br>Richmond TX</div>
+        </a>
+        <a href="https://redriverbbq.com/katy/" class="location-logo" target="_blank" rel="noopener">
+          <img src="rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="logo-image" loading="lazy" decoding="async">
+          <div class="location-text">Red River Bar-B-Que & Burger<br>Katy TX</div>
+        </a>
+        <a href="https://kiershcateringevents.com/" class="location-logo" target="_blank" rel="noopener">
+          <img src="kiersh co white trans.png" alt="Kiersh & Co." class="logo-image" loading="lazy" decoding="async">
+          <div class="location-text">Kiersh & Co.<br>Catering & Events</div>
+        </a>
+      </div>
+      <div class="container links-row">
+        <a href="careers/">Careers</a>
+        <a href="catering/">Catering</a>
+        <a href="community/">Community</a>
+        <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+        <a class="footer-social" href="https://www.facebook.com/profile.php?id=100084192871053" aria-label="Follow Red River Cantina on Facebook">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.3V12h2.2l-.35 3h-1.85v7A10 10 0 0 0 22 12Z"></path>
+            </svg>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </footer>
+
+    <a href="#" class="sticky-order-btn" data-order-modal-trigger>Order Online</a>
+
+    <!-- Concerns Modal -->
+    <div class="order-modal" id="concerns-modal" aria-hidden="true" role="dialog" aria-labelledby="concerns-modal-title">
+      <div class="order-modal__dialog concerns-modal__dialog" tabindex="-1">
+        <button type="button" class="order-modal__close" data-concerns-modal-close aria-label="Close concerns form">&times;</button>
+        <p class="order-modal__eyebrow">Customer Feedback</p>
+        <h2 class="order-modal__title" id="concerns-modal-title">Questions or Concerns?</h2>
+        <p class="order-modal__subtitle">We value your feedback and are committed to providing the best experience. Share your thoughts and we'll get back to you as soon as possible.</p>
+        <form class="concerns-modal__form" action="https://formspree.io/f/mdawzzzn" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Red River Cantina - Questions or Concerns" />
+          <input type="hidden" name="form_name" value="Questions or Concerns" />
+          <div class="concerns-modal__row">
+            <label class="concerns-modal__field">
+              <span>Name *</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="concerns-modal__field">
+              <span>Email *</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+          </div>
+          <label class="concerns-modal__field concerns-modal__field--full">
+            <span>Phone</span>
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+          <label class="concerns-modal__field concerns-modal__field--full">
+            <span>Message *</span>
+            <textarea name="message" rows="5" placeholder="Please share your questions or concerns..." required></textarea>
+          </label>
+          <p class="concerns-modal__status" aria-live="polite"></p>
+          <button type="submit" class="btn btn-modern concerns-modal__submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="site.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
+  
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://redrivercantina.com/richmond/#restaurant",
+      "name": "Red River Cantina",
+      "description": "Authentic Tex-Mex restaurant in Richmond, TX. Fresh fajitas, enchiladas, handcrafted margaritas, full bar, catering, and private party room. Serving the community since 2002.",
+      "url": "https://redrivercantina.com/richmond/",
+      "telephone": "+13462791192",
+      "priceRange": "$$",
+      "servesCuisine": [
+        "Tex-Mex",
+        "Mexican",
+        "American"
+      ],
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19220 W. Bellfort Blvd.",
+        "addressLocality": "Richmond",
+        "addressRegion": "TX",
+        "postalCode": "77407",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.6017,
+        "longitude": -95.758
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "11:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:00",
+          "closes": "22:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100084192871053"
+      ],
+      "hasMenu": "https://redrivercantina.com/richmond/dine-in-menu.html",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "1389",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Donald Cook"
+          },
+          "datePublished": "2024-06-15",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "This is by far my most favorite Tex-Mex restaurant in the Richmond area. The fajitas are to die for, and the rest of the menu is not bad at all. I am a big fan of the top shelf margaritas. Love the atmosphere and service we receive. I've never had a complaint. This is an awesome place to meet up for after work drinks and some appetizers. Highly recommend."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Phallen Boyd"
+          },
+          "datePublished": "2025-01-28",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Visited here for the first time. The hosts at the door were friendly and sat us immediately. Christian was our server and he was amazing. Very knowledgeable of the menu and provided suggestions. I had the pollo marisco and my husband had the build your combination platter. We were both pleasantly surprised. The food and service was great, we will definitely return."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Kelly Chavez"
+          },
+          "datePublished": "2025-01-15",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Excellent service! Our server Jesus truly made our experience amazing. He was very caring, attentive to every detail, and always concerned about our needs and wants. He consistently gave the best recommendations for both food and drinks, and every suggestion was spot on. His professionalism and kindness stood out and made our visit unforgettable."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Eduardo Borges"
+          },
+          "datePublished": "2024-12-01",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "We had dinner at Red River Cantina and Calvin made the whole experience outstanding. His service was the best I've had in a restaurant in a long time. He paid attention without hovering, kept everything moving at the right pace, and treated us like he genuinely cared that we enjoyed our meal."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Boosted Calvin"
+          },
+          "datePublished": "2025-02-01",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Decided on a whim to stop in today during my lunch break. Was greeted immediately! My server Jack was an incredible server, attentive but not hovering. Made great suggestions on the menu items since it was my first time. I got the pollo marisco and it was AMAZING! Great food and great atmosphere!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Chris Broussard"
+          },
+          "datePublished": "2024-11-20",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Had a fantastic experience. The crew went above and beyond to cater to our large party, ensuring everyone got their food at the same time. Service was impeccable and the menu was great. Thanks to John Monty for bending over backwards to make us happy on very short notice! Would recommend to anyone."
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Locations",
+          "item": "https://redrivercantina.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richmond",
+          "item": "https://redrivercantina.com/richmond/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </body>
+</html>

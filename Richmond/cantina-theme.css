@@ -1,0 +1,61 @@
+:root {
+  --teal-deep: #0f766e;
+  --teal-mid: #14b8a6;
+  --teal-light: #2dd4bf;
+  --sun: #f59e0b;
+  --sun-soft: #fbbf24;
+  --chili: #cc0000;
+  --bg-light: #f7f3ea;
+  --sand: #efe5d6;
+  --teal-footer: #115e59;
+  --teal-footer-dark: #0b4a45;
+}
+
+.utility-bar {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.branding-bar {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 255, 255, 0.6), transparent 42%),
+    linear-gradient(180deg, #fbf7ef, #f2e7d8);
+}
+
+.nav-links a:hover {
+  color: #0f766e;
+}
+
+.reviews-section .stars,
+.reward-icon {
+  color: #ffffff;
+}
+
+.review-card a:focus,
+.btn:focus,
+.social-link:focus,
+.join-btn:focus,
+.links-row a:focus {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+.btn-modern {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.btn-sun {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.btn-outline {
+  border-color: #ffffff;
+}
+
+.btn-chili {
+  background: #cc0000;
+  color: #fff;
+}
+
+.chili-accent {
+  color: #cc0000;
+}

@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red River Cantina | To-Go Menu</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../../rrcLogo (1).png" />
+    <link rel="apple-touch-icon" href="../../rrcLogo (1).png" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />
+    <link rel="dns-prefetch" href="https://transparenttextures.com" />
+    
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="../../RRCBrand.png" fetchpriority="high" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../cantina-theme.css" />
+    <link rel="stylesheet" href="../../menu.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="utility-bar">
+        <div class="container utility-inner">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="#" data-order-modal-trigger>Order Online</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+      <div class="branding-bar">
+        <div class="container branding-inner">
+          <a class="logo" href="../../" aria-label="Red River Cantina Home">
+            <img src="../../RRCBrand.png" alt="Red River Cantina" style="height: 80px; display: block;">
+          </a>
+          <nav aria-label="Primary Navigation">
+            <ul class="nav-links">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Menus</a>
+                <ul class="dropdown-menu">
+                  <li><a href="../dine-in/">DINE-IN MENU</a></li>
+                  <li><a href="../to-go/">TO-GO MENU</a></li>
+                  <li><a href="../gluten-free-vegetarian/">GLUTEN FREE | VEGETARIAN</a></li>
+                  <li><a href="../bar/">BAR MENU</a></li>
+                </ul>
+              </li>
+              <li><a href="../../catering/">Catering</a></li>
+              <li><a href="../../party-room/">Party Room</a></li>
+              <li><a href="../../careers/">Careers</a></li>
+              <li><a href="../../community/">Community</a></li>
+              <li><a href="../../reviews/">Reviews</a></li>
+            </ul>
+          </nav>
+          <a href="/" class="btn btn-outline btn-sm header-story-btn">Locations</a>
+          <a href="../../our-story/" class="btn btn-outline btn-sm header-story-btn">Our Story</a>
+          <a href="#" class="btn btn-modern btn-sm" data-order-modal-trigger>Order Online</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <div class="mobile-menu-header">
+        <a href="../../" class="mobile-menu-logo">
+          <img src="../../RRCBrand.png" alt="Red River Cantina" style="height: 50px;">
+        </a>
+        <button class="mobile-menu-close" aria-label="Close Menu">&times;</button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="/" class="mobile-menu-item">Locations</a>
+        <a href="../../our-story/" class="mobile-menu-item">Our Story</a>
+        <a href="../dine-in/" class="mobile-menu-item">Dine-In Menu</a>
+        <a href="../to-go/" class="mobile-menu-item">To-Go Menu</a>
+        <a href="../gluten-free-vegetarian/" class="mobile-menu-item">Gluten Free | Vegetarian</a>
+        <a href="../bar/" class="mobile-menu-item">Bar Menu</a>
+        <a href="../../catering/" class="mobile-menu-item">Catering</a>
+        <a href="../../party-room/" class="mobile-menu-item">Party Room</a>
+        <a href="../../careers/" class="mobile-menu-item">Careers</a>
+        <a href="../../community/" class="mobile-menu-item">Community</a>
+        <a href="../../reviews/" class="mobile-menu-item">Reviews</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a href="#" class="mobile-menu-cta" data-order-modal-trigger>Order Online</a>
+        <div class="mobile-menu-links">
+          <a href="https://order.toasttab.com/egiftcards/redrivercantina">Gift Cards</a>
+          <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+          <a href="https://www.toasttab.com/redrivercantina/rewardsSignup">Rewards</a>
+          <a href="https://apps.apple.com/us/app/red-river-restaurants/id6744835848" class="app-download-btn">iPhone App</a>
+          <a href="https://play.google.com/store/apps/details?id=com.toasttab.redriverrestaurants&hl=en-us&pli=1" class="app-download-btn">Android App</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="menu-page" aria-label="To-Go Menu">
+      <div class="container">
+        <h1 class="page-title">To-Go Menu</h1>
+        <p class="section-note" style="text-align: center; font-size: 1.1rem;">Quick, convenient Tex-Mex favorites ready when you are.</p>
+
+        <section class="menu-section">
+          <h2 class="section-title">Appetizers</h2>
+
+          <div class="menu-item">
+            <h3>GUACAMOLE</h3>
+            <p class="description">Pico de gallo & fresh lime juice</p>
+            <p class="price-line">Reg. 9.95 &nbsp; Lrg. 14.25</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>QUESO BLANCO</h3>
+            <p class="price-line">Reg. 7.95 &nbsp; Lrg. 13.75</p>
+            <p class="add-on"><em>Add Beef Picadillo +2 | Add Beef Fajita +4</em></p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>MAXIMINA'S DIP <span class="new-badge">New</span></h3>
+            <p class="description">Refried beans, chile con queso, beef picadillo, guacamole, pico de gallo & queso fresco</p>
+            <p class="price">13.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>FLAUTAS CON QUESO</h3>
+            <p class="description">Crispy corn tortillas stuffed with ranchero chicken and pepper jack cheese. Chile con queso for dipping</p>
+            <p class="price">13.55</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ANTOJITO SAMPLER</h3>
+            <p class="description">Beef Fajita Nachos, Chicken Fajita Quesadillas & Chicken Flautas</p>
+            <p class="price">18.95</p>
+          </div>
+        </section>
+
+        <!-- Nachos & Quesadillas Section -->
+        <section class="menu-section">
+          <h2 class="section-title">Nachos & Quesadillas</h2>
+          <p class="section-note">Served with guacamole, sour cream & jalapenos</p>
+
+          <div class="menu-item">
+            <h3>NACHOS PICADILLO</h3>
+            <p class="price">13.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>FAJITA NACHOS</h3>
+            <p class="price-line">Ck 13.95 &nbsp; Bf 17.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>FAJITA QUESADILLAS</h3>
+            <p class="price-line">Ck 13.95 &nbsp; Bf 17.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>BRISKET QUESADILLAS</h3>
+            <p class="description">Slow-smoked brisket, grated cheese & pico de gallo</p>
+            <p class="price">16.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP QUESADILLAS</h3>
+            <p class="price">16.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHICKEN FAJITA & SPINACH QUESADILLAS</h3>
+            <p class="price">15.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>NACHOS TAMPICO</h3>
+            <p class="description">Layered tortilla chips topped with refried beans, chile con queso, Mexican crema, guacamole & pico de gallo</p>
+            <p class="price-line">Beef Picadillo 14.95 &nbsp; Brisket 16.95</p>
+          </div>
+        </section>
+
+        <!-- Tex-Mex Favorites Section -->
+        <section class="menu-section">
+          <h2 class="section-title">Tex-Mex Favorites</h2>
+          <p class="section-note">Served with Mexican rice and beans</p>
+
+          <div class="menu-item">
+            <h3>CHEESE ENCHILADA</h3>
+            <p class="price-line">(1) 9.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADA DE CARNE</h3>
+            <p class="price-line">(1) 11.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADA DE POLLO</h3>
+            <p class="price-line">(1) 11.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHICKEN TACO AL CARBON</h3>
+            <p class="description">Guacamole & pico de gallo</p>
+            <p class="price-line">(1) 11.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHICKEN TACO AL CARBON & SOPA DE TORTILLA</h3>
+            <p class="price">15.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>JUMBO CRISPY TACO</h3>
+            <p class="description">Beef picadillo or ranchero chicken</p>
+            <p class="price-line">(1) 11.95</p>
+          </div>
+        </section>
+
+        <!-- Sizzling Fajitas -->
+        <section class="menu-section">
+          <h2 class="section-title">Sizzling Fajitas</h2>
+          <p class="section-note">Served with Mexican rice, beans, guacamole, pico de gallo & fresh flour tortillas</p>
+
+          <div class="menu-item">
+            <h3>SIZZLING VEGGIE FAJITAS</h3>
+            <p class="description">Grilled zucchini, squash, red bell peppers, green bell peppers and red onions. Served with pico de gallo, guacamole, cilantro rice, black beans and your choice of flour or corn tortillas</p>
+            <p class="price">16.95</p>
+            <p class="add-on"><em>*Cilantro rice & black beans contain chicken stock</em></p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHICKEN FAJITAS</h3>
+            <p class="price-line">1/4 lb: 14.95 &nbsp; BEEF: 17.95</p>
+            <p class="price-line">BEEF & CHICKEN: 16.95</p>
+          </div>
+        </section>
+
+        <!-- Sopa y Ensaladas -->
+        <section class="menu-section soup-salad-section">
+          <h2 class="section-title fancy">Sopa y Ensaladas</h2>
+
+          <div class="menu-item">
+            <h3>SOPA DE TORTILLA</h3>
+            <p class="description">Mexico City style tortilla soup with fresh carrots, zucchini, yellow squash, tomatoes, crispy tortilla strips, jack cheese, avocado and chicken fajita or ranchero chicken</p>
+            <p class="price-line">Med. 9.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>FAJITA ENSALADA</h3>
+            <p class="description">Your choice of spring mix or iceberg & green leaf lettuce topped with tomatoes, cheese, cherry tomatoes, bacon, sliced avocado, avocado, crispy tortilla strips, queso fresco & chicken fajita</p>
+            <p class="price">14.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TACO SALAD</h3>
+            <p class="description">Fresh fried taco shell, lettuce, beef picadillo or ranchero chicken, grated cheese, black beans, diced tomato and sour cream. Guacamole and pico de gallo</p>
+            <p class="price">13.95</p>
+          </div>
+
+          <p class="dressing-note"><strong>Dressing Choices:</strong> Cilantro Lime Vinaigrette, Tequila Lime Vinaigrette, Oil & Vinegar, Balsamic Vinaigrette, Ranch & Avocado Ranch.</p>
+        </section>
+
+        <!-- Maximina's Build Your Own Combinados -->
+        <section class="menu-section combinados-section">
+          <h2 class="section-title fancy">Maximina's Build Your Own Combinados</h2>
+          <p class="section-note">Served with Mexican rice and refried beans</p>
+          <p class="section-note italic-note">Sorry... No Doubles</p>
+          
+          <div class="combo-pricing">
+            <span class="combo-option">CHOOSE TWO 14.95</span>
+            <span class="combo-option">CHOOSE THREE 16.95</span>
+          </div>
+
+          <div class="combo-grid">
+            <div class="combo-item">
+              <h4>ENCHILADA</h4>
+              <p>Cheese, Beef Picadillo or Ranchero Chicken</p>
+            </div>
+            <div class="combo-item">
+              <h4>CRISPY CHICKEN FLAUTA</h4>
+              <p>Ranchero chicken & Monterrey jack cheese</p>
+            </div>
+            <div class="combo-item">
+              <h4>CRISPY OR SOFT TACO</h4>
+              <p>Beef picadillo or ranchero chicken</p>
+            </div>
+            <div class="combo-item">
+              <h4>TOSTADA</h4>
+              <p>Crispy tortilla, refried beans, ranchero chicken or beef picadillo, grated cheese, lettuce & pico de gallo</p>
+            </div>
+            <div class="combo-item">
+              <h4>PORK TAMALE</h4>
+              <p>Chile con carne & grated cheese</p>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle" style="text-align: center; margin: 2rem 0 1rem;">Premier Choices</h3>
+
+          <div class="combo-grid">
+            <div class="combo-item premier">
+              <h4>TACO AL CARBON</h4>
+              <p>Guacamole & pico de gallo</p>
+              <p class="add-on">Chicken +1 &nbsp; Beef Fajita +2</p>
+            </div>
+            <div class="combo-item premier">
+              <h4>SHRIMP BROCHETTE</h4>
+              <p>Three bacon wrapped jumbo Gulf shrimp, Monterrey jack cheese & jalapeno +5</p>
+            </div>
+            <div class="combo-item premier">
+              <h4>ENCHILADA AL CARBON</h4>
+              <p>Guacamole & pico de gallo</p>
+              <p class="add-on">Chicken Fajita +1 &nbsp; Beef Fajita +2</p>
+            </div>
+            <div class="combo-item premier">
+              <h4>CHICKEN DIABLO</h4>
+              <p>Three bacon wrapped chicken fajita, jalape&ntilde;o & pepper jack cheese +3</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Enchiladas Famosas -->
+        <section class="menu-section">
+          <h2 class="section-title fancy">Enchiladas Famosas</h2>
+          <p class="section-note">Served with Mexican rice and refried beans</p>
+
+          <div class="menu-item">
+            <h3>CHEESE ENCHILADAS</h3>
+            <p class="description">with chile con carne & grated cheese</p>
+            <p class="price-line">(2) 12.95 &nbsp; (3) 14.25</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS DE CARNE</h3>
+            <p class="description">Beef picadillo enchiladas, chile con carne & grated cheese</p>
+            <p class="price-line">(2) 14.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS AL CARBON</h3>
+            <p class="description">Fajita enchiladas, chile con carne and grated cheese. Guacamole & Pico de gallo</p>
+            <p class="price-line">(2) Chicken 16.95 &nbsp; Beef 18.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS DE CARNITAS</h3>
+            <p class="description">Slow-roasted pork carnitas, sour cream sauce & grated cheese</p>
+            <p class="price-line">(2) 17.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS DE POLLO</h3>
+            <p class="description">Ranchero chicken enchiladas, sour cream sauce, verde sauce or chile con carne & grated cheese</p>
+            <p class="price-line">(2) 14.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>SLOW-SMOKED BRISKET ENCHILADAS &ndash; <span style="font-style: italic; color: var(--chili);">Guest Favorite!</span></h3>
+            <p class="description">Sour cream sauce, grated cheese & avocado</p>
+            <p class="price-line">(2) 17.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS MAXIMINA</h3>
+            <p class="description">Ranchero chicken enchiladas topped with our habanero & cilantro cream sauce & grated cheese</p>
+            <p class="price-line">(2) 16.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS MARISCO</h3>
+            <p class="description">Cheese enchiladas topped with shrimp & scallops in a white wine cream sauce. Refried black beans, cilantro rice and sliced avocado</p>
+            <p class="price-line">(2) 21.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CRAWFISH ENCHILADAS</h3>
+            <p class="description">Enchiladas loaded with Louisiana crawfish & topped with our white wine cream sauce & avocado. Refried black beans & cilantro rice</p>
+            <p class="price-line">(2) 19.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>ENCHILADAS CAMARONES</h3>
+            <p class="description">Loaded with our shrimp stuffing and topped with Marisco sauce & avocado</p>
+            <p class="price-line">(2) 18.95</p>
+          </div>
+        </section>
+
+        <!-- Family Platters -->
+        <section class="menu-section">
+          <h2 class="section-title">Family Platters</h2>
+          <p class="section-note">Serves 3-4 &nbsp; &nbsp; Sorry... No Subs</p>
+
+          <div class="platter-grid">
+            <div class="platter-item">
+              <h3>GRANDIOSO</h3>
+              <p>1 Lb Beef & Chicken Fajitas<br>
+              (3) Cheese Enchiladas<br>
+              (3) Enchiladas de Pollo</p>
+              <p class="price">69.95</p>
+            </div>
+
+            <div class="platter-item">
+              <h3>PARILLADA</h3>
+              <p>1 Lb Beef & Chicken Fajitas<br>
+              Shrimp Brochette (6)<br>
+              Baby Back Ribs (1/2 Rack)</p>
+              <p class="price">84.95</p>
+            </div>
+          </div>
+
+          <h3 class="section-subtitle">Great Additions</h3>
+
+          <div class="additions-grid">
+            <div class="addition-item">
+              <p><strong>JALISCO TOPPING</strong><br>Onions, peppers, mushrooms & jack cheese</p>
+              <p class="price">4.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>JALAPE&Ntilde;O CHEESE SAUSAGE</strong></p>
+              <p class="price">4.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>CHILES TOREADOS</strong><br>Roasted jalapenos & Habaneros</p>
+              <p class="price">1.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>SEAFOOD MARISCO TOPPING</strong><br>Shrimp, scallops & white wine cream sauce</p>
+              <p class="price">10.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>HABANERO & CILANTRO CREAM SAUCE</strong></p>
+              <p class="price">1.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>SHRIMP BROCHETTE (3)</strong></p>
+              <p class="price">10.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>GRATED CHEDDAR & SOUR CREAM</strong></p>
+              <p class="price">1.50</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>BABY BACK RIBS</strong></p>
+              <p class="price">11.95</p>
+            </div>
+            <div class="addition-item">
+              <p><strong>CHICKEN DIABLO (3)</strong></p>
+              <p class="price">9.95</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Grilled Specialties -->
+        <section class="menu-section">
+          <h2 class="section-title" style="color: var(--chili);">Grilled Specialties</h2>
+          <p class="section-note">Served with Mexican rice & frijoles a la charra</p>
+
+          <div class="menu-item">
+            <h3>PORK CARNITAS</h3>
+            <p class="description">Slow-roasted pork carnitas served with guacamole, red onions & habanero salsa</p>
+            <p class="price">18.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CHICKEN DIABLO</h3>
+            <p class="description">Bacon wrapped chicken fajita stuffed with fresh jalape&ntilde;o & pepper jack cheese</p>
+            <p class="price">22.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>VERACRUZ</h3>
+            <p class="description">Three mesquite grilled shrimp brochette w/ beef & chicken fajitas. Guacamole & pico de gallo</p>
+            <p class="price">27.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CARNE ASADA</h3>
+            <p class="description">Tender outside skirt steak</p>
+            <p class="price">28.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>CARNE ASADA JALISCO</h3>
+            <p class="description">Outside skirt steak topped with grilled onions, poblano peppers, mushrooms and pepper jack cheese</p>
+            <p class="price">31.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>POLLO JALISCO</h3>
+            <p class="description">Chicken fajita breast grilled and topped with grilled onions, poblano peppers, mushrooms and pepper jack cheese</p>
+            <p class="price">21.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>POLLO MARISCO</h3>
+            <p class="description">Chicken fajita topped with Gulf shrimp & scallops in our white wine cream sauce. Guacamole & pico de gallo</p>
+            <p class="price">22.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>COSTILLAS &ndash; <em>BABY BACK RIBS</em></h3>
+            <p class="description">&frac12; rack of our slow-smoked baby back ribs</p>
+            <p class="price">19.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>EL JEFE <span class="new-badge">New</span></h3>
+            <p class="description">Tender outside skirt steak & two cheese enchiladas</p>
+            <p class="price">23.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>HAMBURGUESA TIJUANA <span class="new-badge">New</span></h3>
+            <p class="description">Double meat smash burger topped with pepper jack cheese, sliced avocado, pico de gallo and siracha avocado cream sauce. Served with French fries</p>
+            <p class="price">15.95</p>
+          </div>
+        </section>
+
+        <!-- Grilled Seafood -->
+        <section class="menu-section">
+          <h2 class="section-title" style="color: var(--teal-deep);">Grilled Seafood</h2>
+          <p class="section-note">Served with rice & beans</p>
+
+          <div class="menu-item">
+            <h3>CHIPOTLE-ANCHO GLAZED SALMON</h3>
+            <p class="description">8oz Atlantic salmon fillet, grilled & glazed with our chipotle-ancho sauce. Avocado, pico de gallo, cilantro rice & black beans.</p>
+            <p class="price">24.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>MAHI-MAHI</h3>
+            <p class="description">8oz fillet grilled & served with sliced avocado, pico de gallo, refried black beans & cilantro rice</p>
+            <p class="price">24.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>MAHI-MAHI MARISCO</h3>
+            <p class="description">Topped with white wine cream sauce, saut&eacute;ed shrimp & scallops. Avocado, pico de gallo, refried black beans and cilantro rice</p>
+            <p class="price">29.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SEARED AHI TUNA</h3>
+            <p class="description">Siracha avocado cream sauce, sliced avocado, pico de gallo, cilantro rice & black refried beans</p>
+            <p class="price">21.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP BROCHETTE</h3>
+            <p class="description">Six bacon wrapped jumbo Gulf shrimp stuffed with Monterrey jack cheese & jalapeno</p>
+            <p class="price">24.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TEXAS REDFISH</h3>
+            <p class="description">8oz fillet grilled & topped with marisco sauce & pico de gallo. Served with cilantro rice & black charro beans</p>
+            <p class="price">22.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP FAJITAS</h3>
+            <p class="description">8pc jumbo Gulf shrimp, grilled with onions, bell pepper, zucchini & squash. Served with guacamole, pico de gallo & your choice of rice & beans</p>
+            <p class="price">21.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SHRIMP & COMBO FAJITAS</h3>
+            <p class="description">4pc jumbo Gulf shrimp, beef & chicken fajitas, grilled onions, bell pepper, zucchini & squash. Served with guacamole, pico de gallo & your choice of rice & beans</p>
+            <p class="price">22.95</p>
+            <p class="add-on"><em>Sub all Beef Fajitas +2</em></p>
+          </div>
+        </section>
+
+        <!-- Tacos & Burritos -->
+        <section class="menu-section">
+          <h2 class="section-title fancy" style="color: var(--chili);">Tacos & Burritos</h2>
+          <p class="section-note">Served with rice & beans</p>
+
+          <div class="menu-item">
+            <h3>TACO DINNER</h3>
+            <p class="description">Two crispy or soft tacos with your choice of beef picadillo or ranchero chicken topped with shredded lettuce, diced tomato, grated cheese & queso fresco</p>
+            <p class="price">13.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TACOS SUPREMA</h3>
+            <p class="description">Two homemade crispy taco shells with beef picadillo, shredded lettuce, grated cheese, pico de gallo & queso fresco</p>
+            <p class="price">15.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TAMALES DE LA CASA</h3>
+            <p class="description">Three handmade tamales loaded with shredded pork & topped with chile con carne & grated cheese</p>
+            <p class="price">15.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>AHI TUNA TACOS</h3>
+            <p class="description">Seared ahi tuna in corn tortillas loaded with escabeche, siracha avocado cream sauce, sliced avocado & queso fresco. Cilantro rice and black beans</p>
+            <p class="price">19.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TACOS DEL MAR</h3>
+            <p class="description">Gulf shrimp tacos (fried or grilled) in homemade corn tortillas. Loaded with escabeche, siracha avocado cream sauce, sliced avocado & queso fresco. Cilantro rice and black beans</p>
+            <p class="price">17.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>TACOS AL CARBON</h3>
+            <p class="description">Two chicken fajita tacos (flour or corn tortillas) with Mexican rice, beans, guacamole & pico de gallo</p>
+            <p class="price-line">Chicken 16.95 &nbsp; Beef 17.95 &nbsp; <em>Add Beef Fajita +3</em></p>
+          </div>
+
+          <div class="menu-item">
+            <h3>BURRITO CLASSICO</h3>
+            <p class="description">Beef picadillo, refried beans & chile con queso in a flour tortilla & topped with our chile con carne</p>
+            <p class="price">15.95</p>
+            <p class="add-on"><em>Beef Fajita +3</em></p>
+          </div>
+
+          <div class="menu-item">
+            <h3>BURRITO MONTERREY</h3>
+            <p class="description">Chicken fajita, beans & chile con queso in a flour tortilla & topped with sour cream sauce & Monterrey jack. Guacamole & pico on the side</p>
+            <p class="price">16.95</p>
+            <p class="add-on"><em>Beef Fajita +3</em></p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>CRISPY CHICKEN FLAUTAS</h3>
+            <p class="description">Hand rolled tortillas stuffed with ranchero chicken, Monterrey jack cheese and lightly fried (2). Guacamole, pico de gifts, chile con queso & Mexican crema</p>
+            <p class="price">15.95</p>
+          </div>
+
+          <div class="menu-item highlight">
+            <h3>FAJITA BOWL <span class="new-badge">New</span></h3>
+            <p class="description">Chicken fajita, cilantro rice, black beans, shredded lettuce, queso blanco, guacamole, pico de gallo, Mexican crema, queso fresco & crispy tortilla strips</p>
+            <p class="price">15.95</p>
+            <p class="add-on"><em>Beef +3</em></p>
+          </div>
+
+          <div class="menu-item street-tacos">
+            <h3>STREET TACOS</h3>
+            <p class="description">Three tacos with chicken fajita on corn tortillas with diced onions & cilantro. Habanero salsa on the side</p>
+            <p class="price">14.95</p>
+            <p class="add-on"><em>Sub Beef Fajita +2</em></p>
+          </div>
+        </section>
+
+        <!-- Desserts -->
+        <section class="menu-section">
+          <h2 class="section-title fancy" style="color: var(--chili);">Desserts</h2>
+          <p class="section-note italic-note">Made from Scratch Daily!</p>
+
+          <div class="menu-item">
+            <h3>TRES LECHES</h3>
+            <p class="description">Homemade tres leches cake, strawberries & fresh whipped cream</p>
+            <p class="price">8.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>SOPAPILLAS</h3>
+            <p class="description">Served with powdered sugar, cinnamon & honey</p>
+            <p class="price">7.95</p>
+          </div>
+
+          <div class="menu-item">
+            <h3>LA MUERTE DEL CHOCOLATE</h3>
+            <p class="description">Homemade brownie, Godiva chocolate, powdered sugar, Blue Bell ice cream and chocolate syrup</p>
+            <p class="price">8.95</p>
+          </div>
+        </section>
+
+        <div class="disclaimer">
+          <p>Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions. Before placing your order, please inform your server if a person in your party has a food allergy.</p>
+          <p class="menu-date">RRC 11.2025</p>
+        </div>
+
+      </div>
+      <section class="info-band" aria-label="Location and Rewards">
+        <div class="container info-grid">
+          <article class="tile visit-tile">
+            <p class="tile-title">Visit Us</p>
+            <h3>Red River Cantina</h3>
+            <p>Richmond, Texas</p>
+            <p>19220 W. Bellfort Blvd.</p>
+            <p>Richmond, Texas 77407</p>
+            <p>346-279-1192</p>
+            <p class="hours">Sunday &ndash; Thursday | 11:00 am &ndash; 9:00pm &ndash; Friday &amp; Saturday | 11:00 am &ndash; 10:00pm</p>
+            <a href="https://www.facebook.com/profile.php?id=100084192871053" class="social-link">Follow Us</a>
+          </article>
+
+          <article class="tile reward-tile">
+            <div class="reward-icon">⭐</div>
+            <h3>Rewards Program</h3>
+            <p>Earn points, unlock rewards, get a birthday bonus.</p>
+            <a href="https://www.toasttab.com/redrivercantina/rewardsSignup" class="join-btn">Join Now</a>
+          </article>
+
+          <article class="tile map-tile" aria-label="Map Preview">
+            <iframe
+              title="Red River Cantina Richmond Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=19220+W+Bellfort+Blvd,+Richmond,+TX+77407&output=embed"
+              style="width: 100%; height: 100%; min-height: 200px; border: 0; border-radius: 8px;"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="brand-footer">
+      <div class="container logos-row">
+        <a href="https://redriverbbq.com/league-city/" class="location-logo" target="_blank" rel="noopener">
+          <img src="../../rrbbqLogo.png" alt="Red River Bar & Grill" class="logo-image">
+          <div class="location-text">Red River Bar & Grill<br>League City TX</div>
+        </a>
+        <a href="/leaguecity/" class="location-logo">
+          <img src="../../RRCBrand.png" alt="Red River Cantina" class="logo-image">
+          <div class="location-text">Red River Cantina<br>League City TX</div>
+        </a>
+        <a href="/richmond/" class="location-logo">
+          <img src="../../RRCBrand.png" alt="Red River Cantina" class="logo-image">
+          <div class="location-text">Red River Cantina<br>Richmond TX</div>
+        </a>
+        <a href="https://redriverbbq.com/katy/" class="location-logo" target="_blank" rel="noopener">
+          <img src="../../rrbbqbLogo.png" alt="Red River Bar-B-Que & Burger" class="logo-image">
+          <div class="location-text">Red River Bar-B-Que & Burger<br>Katy TX</div>
+        </a>
+        <a href="https://kiershcateringevents.com/" class="location-logo" target="_blank" rel="noopener">
+          <img src="../../kiersh co white trans.png" alt="Kiersh & Co." class="logo-image">
+          <div class="location-text">Kiersh & Co.<br>Catering & Events</div>
+        </a>
+      </div>
+      <div class="container links-row">
+        <a href="../../careers/">Careers</a>
+        <a href="../../catering/">Catering</a>
+        <a href="../../community/">Community</a>
+        <a href="https://www.toasttab.com/redrivercantina/marketing-signup">E-Club</a>
+        <a class="footer-social" href="https://www.facebook.com/profile.php?id=100084192871053" aria-label="Follow Red River Cantina on Facebook">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.16 1.8.16v2h-1c-1 0-1.3.62-1.3 1.3V12h2.2l-.35 3h-1.85v7A10 10 0 0 0 22 12Z"></path>
+            </svg>
+          </span>
+          <span>Facebook</span>
+        </a>
+      </div>
+    </footer>
+
+    <a href="#" class="sticky-order-btn" data-order-modal-trigger>Order Online</a>
+
+    <script src="../../site.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
+  
+    
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://redrivercantina.com/richmond/#restaurant",
+      "name": "Red River Cantina",
+      "description": "Authentic Tex-Mex restaurant in Richmond, TX. Fresh fajitas, enchiladas, handcrafted margaritas, full bar, catering, and private party room. Serving the community since 2002.",
+      "url": "https://redrivercantina.com/richmond/",
+      "telephone": "+13462791192",
+      "priceRange": "$$",
+      "servesCuisine": [
+        "Tex-Mex",
+        "Mexican",
+        "American"
+      ],
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19220 W. Bellfort Blvd.",
+        "addressLocality": "Richmond",
+        "addressRegion": "TX",
+        "postalCode": "77407",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.6017,
+        "longitude": -95.758
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "opens": "11:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "11:00",
+          "closes": "22:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100084192871053"
+      ],
+      "hasMenu": "https://redrivercantina.com/richmond/dine-in-menu.html",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.3",
+        "reviewCount": "1389",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Menu",
+      "@id": "https://redrivercantina.com/richmond/to-go-menu.html",
+      "name": "Red River Cantina To-Go Menu - Richmond",
+      "url": "https://redrivercantina.com/richmond/to-go-menu.html",
+      "inLanguage": "en-US",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Antojitos",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Guacamole",
+              "description": "Pico de gallo & fresh lime juice",
+              "offers": {
+                "@type": "Offer",
+                "price": "9.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Queso Blanco",
+              "offers": {
+                "@type": "Offer",
+                "price": "7.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Maximina's Dip",
+              "description": "Refried beans, chile con queso, beef picadillo, guacamole, pico de gallo & queso fresco",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Flautas con Queso",
+              "description": "Crispy corn tortillas stuffed with ranchero chicken and pepper jack cheese, chile con queso for dipping",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.55",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Antojito Sampler",
+              "description": "Beef Fajita Nachos, Chicken Fajita Quesadillas & Chicken Flautas",
+              "offers": {
+                "@type": "Offer",
+                "price": "18.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Nachos & Quesadillas",
+          "description": "Served with guacamole, sour cream & jalapenos",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Nachos Picadillo",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fajita Nachos - Chicken",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fajita Nachos - Beef",
+              "offers": {
+                "@type": "Offer",
+                "price": "17.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fajita Quesadillas - Chicken",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Brisket Quesadillas",
+              "description": "Slow-smoked brisket, grated cheese & pico de gallo",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Shrimp Quesadillas",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Nachos Tampico",
+              "description": "Layered chips with refried beans, chile con queso, Mexican crema, guacamole & pico de gallo",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Build Your Own Combinados",
+          "description": "Served with Mexican rice and refried beans. Choose Two $14.95 or Choose Three $16.95",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Combinados - Choose Two",
+              "description": "Choose 2 from: Enchilada, Crispy or Soft Taco, Pork Tamale, Crispy Chicken Flauta, Tostada",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Combinados - Choose Three",
+              "description": "Choose 3 from: Enchilada, Crispy or Soft Taco, Pork Tamale, Crispy Chicken Flauta, Tostada",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Enchiladas Famosas",
+          "description": "Served with Mexican rice and refried beans",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Cheese Enchiladas (2)",
+              "description": "With chile con carne & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "12.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas de Carne (2)",
+              "description": "Beef picadillo enchiladas, chile con carne & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas Al Carbon - Chicken (2)",
+              "description": "Chicken fajita enchiladas, chile con carne, grated cheese, guacamole & pico de gallo",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas Al Carbon - Beef (2)",
+              "offers": {
+                "@type": "Offer",
+                "price": "18.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas de Carnitas (2)",
+              "description": "Slow-roasted pork carnitas, sour cream sauce & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "17.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas de Pollo (2)",
+              "description": "Ranchero chicken enchiladas, sour cream sauce, verde sauce or chile con carne & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Slow-Smoked Brisket Enchiladas (2)",
+              "description": "Guest favorite. Sour cream sauce, grated cheese & avocado",
+              "offers": {
+                "@type": "Offer",
+                "price": "17.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas Maximina (2)",
+              "description": "Ranchero chicken enchiladas topped with habanero & cilantro cream sauce & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "16.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas Marisco (2)",
+              "description": "Cheese enchiladas topped with shrimp & scallops in white wine cream sauce, refried black beans, cilantro rice and avocado",
+              "offers": {
+                "@type": "Offer",
+                "price": "21.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Crawfish Enchiladas (2)",
+              "description": "Loaded with Louisiana crawfish, white wine cream sauce & avocado, refried black beans & cilantro rice",
+              "offers": {
+                "@type": "Offer",
+                "price": "19.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Enchiladas Camarones (2)",
+              "description": "Loaded with shrimp stuffing, Marisco sauce & avocado",
+              "offers": {
+                "@type": "Offer",
+                "price": "18.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Soups & Salads",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Sopa de Tortilla",
+              "description": "Mexico City style tortilla soup with fresh vegetables, crispy tortilla strips, jack cheese, avocado and chicken fajita",
+              "offers": {
+                "@type": "Offer",
+                "price": "9.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Fajita Ensalada",
+              "description": "Spring mix or iceberg lettuce with tomatoes, cheese, cherry tomatoes, bacon, sliced avocado, crispy tortilla strips, queso fresco & chicken fajita",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Seafood Ensalada",
+              "description": "Spring mix, red onion, purple cabbage, cherry tomatoes, avocado, strawberries, mango, crispy tortilla strips & queso fresco with choice of Grilled Shrimp, Ahi Tuna, or Atlantic Salmon",
+              "offers": {
+                "@type": "Offer",
+                "price": "18.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Taco Salad",
+              "description": "Fresh fried taco shell, lettuce, beef picadillo or ranchero chicken, grated cheese, black beans, diced tomato, sour cream, guacamole and pico de gallo",
+              "offers": {
+                "@type": "Offer",
+                "price": "14.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Tacos & Burritos",
+          "description": "Served with rice & beans",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Taco Dinner",
+              "description": "Two crispy or soft tacos with beef picadillo or ranchero chicken, shredded lettuce, diced tomato & queso fresco",
+              "offers": {
+                "@type": "Offer",
+                "price": "13.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Tacos Suprema",
+              "description": "Two homemade crispy taco shells with beef picadillo, shredded lettuce, grated cheese, sour cream, pico de gallo & queso fresco",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Tamales de la Casa",
+              "description": "Three handmade tamales with shredded pork topped with chile con carne & grated cheese",
+              "offers": {
+                "@type": "Offer",
+                "price": "15.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Ahi Tuna Tacos",
+              "description": "Seared ahi tuna in corn tortillas with escabeche, sriracha avocado cream sauce, sliced avocado & queso fresco",
+              "offers": {
+                "@type": "Offer",
+                "price": "19.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Family Platters",
+          "description": "Serves 3-4",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Grandioso",
+              "description": "1 lb Beef & Chicken Fajitas, 3 Cheese Enchiladas, 5 Enchiladas de Pollo",
+              "offers": {
+                "@type": "Offer",
+                "price": "69.95",
+                "priceCurrency": "USD"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Parillada",
+              "description": "1 lb Beef & Chicken Fajitas, Shrimp Brochette (6), Baby Back Ribs (half rack)",
+              "offers": {
+                "@type": "Offer",
+                "price": "84.95",
+                "priceCurrency": "USD"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Locations",
+          "item": "https://redrivercantina.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Richmond",
+          "item": "https://redrivercantina.com/richmond/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "To-Go Menu",
+          "item": "https://redrivercantina.com/richmond/to-go-menu.html"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </body>
+</html>
