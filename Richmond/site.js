@@ -343,6 +343,16 @@ document.addEventListener('DOMContentLoaded', () => {
           formData.set('_replyto', emailValue.trim());
         }
 
+        // Generate unique subject
+        const name = formData.get('name') || '';
+        const eventDate = formData.get('eventDate') || '';
+        const timestamp = new Date().toISOString();
+        let subject = 'Red River Cantina Party Room Inquiry';
+        if (name) subject += ` - ${name}`;
+        if (eventDate) subject += ` - ${eventDate}`;
+        subject += ` - ${timestamp}`;
+        formData.set('_subject', subject);
+
         formData.set('source_page', window.location.pathname);
         formData.set('submitted_at', new Date().toISOString());
 
@@ -563,6 +573,22 @@ document.addEventListener('DOMContentLoaded', () => {
           formData.set('_replyto', emailValue.trim());
         }
 
+        // Generate unique subject
+        const firstName = formData.get('firstName') || '';
+        const lastName = formData.get('lastName') || '';
+        const name = formData.get('name') || '';
+        const eventDate = formData.get('eventDate') || '';
+        const timestamp = new Date().toISOString();
+        let subject = 'Red River Cantina Catering Inquiry';
+        if (firstName && lastName) {
+          subject += ` - ${firstName} ${lastName}`;
+        } else if (name) {
+          subject += ` - ${name}`;
+        }
+        if (eventDate) subject += ` - ${eventDate}`;
+        subject += ` - ${timestamp}`;
+        formData.set('_subject', subject);
+
         formData.set('source_page', window.location.pathname);
         formData.set('submitted_at', new Date().toISOString());
 
@@ -649,6 +675,20 @@ document.addEventListener('DOMContentLoaded', () => {
           formData.set('_replyto', emailValue.trim());
         }
 
+        // Generate unique subject
+        const firstName = formData.get('firstName') || '';
+        const lastName = formData.get('lastName') || '';
+        const name = formData.get('name') || '';
+        const timestamp = new Date().toISOString();
+        let subject = 'Red River Cantina Careers Application';
+        if (firstName && lastName) {
+          subject += ` - ${firstName} ${lastName}`;
+        } else if (name) {
+          subject += ` - ${name}`;
+        }
+        subject += ` - ${timestamp}`;
+        formData.set('_subject', subject);
+
         formData.set('source_page', window.location.pathname);
         formData.set('submitted_at', new Date().toISOString());
 
@@ -734,6 +774,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof emailValue === 'string' && emailValue.trim()) {
           formData.set('_replyto', emailValue.trim());
         }
+
+        // Generate unique subject
+        const firstName = formData.get('firstName') || '';
+        const lastName = formData.get('lastName') || '';
+        const name = formData.get('name') || '';
+        const timestamp = new Date().toISOString();
+        let subject = 'Red River Cantina Community Spirit Night Application';
+        if (firstName && lastName) {
+          subject += ` - ${firstName} ${lastName}`;
+        } else if (name) {
+          subject += ` - ${name}`;
+        }
+        subject += ` - ${timestamp}`;
+        formData.set('_subject', subject);
 
         formData.set('source_page', window.location.pathname);
         formData.set('submitted_at', new Date().toISOString());
@@ -938,6 +992,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof emailValue === 'string' && emailValue.trim()) {
           formData.set('_replyto', emailValue.trim());
         }
+
+        // Generate unique subject
+        const name = formData.get('name') || '';
+        const timestamp = new Date().toISOString();
+        let subject = 'Red River Cantina Questions or Concerns';
+        if (name) subject += ` - ${name}`;
+        subject += ` - ${timestamp}`;
+        formData.set('_subject', subject);
+
         formData.set('source_page', window.location.pathname);
         formData.set('submitted_at', new Date().toISOString());
 
@@ -966,4 +1029,146 @@ document.addEventListener('DOMContentLoaded', () => {
 
     concernsForm.addEventListener('input', resetFormStatus);
   }
+
+  // Reservation Modal
+  const RESERVATION_MODAL_ID = 'reservation-modal';
+  let reservationLastFocused = null;
+
+  const closeReservationModal = () => {
+    const modal = document.getElementById(RESERVATION_MODAL_ID);
+    if (!modal) return;
+
+    modal.setAttribute('data-visible', 'false');
+    modal.setAttribute('aria-hidden', 'true');
+    body.style.overflow = '';
+
+    if (reservationLastFocused && typeof reservationLastFocused.focus === 'function') {
+      reservationLastFocused.focus();
+    }
+  };
+
+  const openReservationModal = () => {
+    const modal = document.getElementById(RESERVATION_MODAL_ID);
+    if (!modal) return;
+
+    reservationLastFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+    modal.setAttribute('data-visible', 'true');
+    modal.setAttribute('aria-hidden', 'false');
+    body.style.overflow = 'hidden';
+
+    const firstInput = modal.querySelector('input, select, textarea');
+    window.requestAnimationFrame(() => {
+      if (firstInput) firstInput.focus();
+    });
+  };
+
+  // Reservation modal triggers
+  document.querySelectorAll('[data-reservation-open]').forEach((btn) => {
+    btn.addEventListener('click', openReservationModal);
+  });
+
+  const reservationModal = document.getElementById(RESERVATION_MODAL_ID);
+  if (reservationModal) {
+    reservationModal.addEventListener('click', (event) => {
+      if (event.target === reservationModal) {
+        closeReservationModal();
+      }
+    });
+
+    reservationModal.querySelectorAll('[data-reservation-close]').forEach((btn) => {
+      btn.addEventListener('click', closeReservationModal);
+    });
+  }
+
+  // Handle reservation form submission
+  const reservationForm = document.getElementById('reservation-form');
+  if (reservationForm) {
+    reservationForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(reservationForm);
+      const messageDiv = document.getElementById('reservation-message');
+
+      // Convert military time to standard time format
+      const timeInput = reservationForm.querySelector('input[name="time"]');
+      if (timeInput && timeInput.value) {
+        const militaryTime = timeInput.value;
+        const [hours, minutes] = militaryTime.split(':');
+        const hour12 = hours % 12 || 12;
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const standardTime = `${hour12}:${minutes} ${ampm}`;
+        formData.set('time', standardTime);
+      }
+
+      // Generate unique subject
+      const name = formData.get('name') || '';
+      const date = formData.get('date') || '';
+      const timestamp = new Date().toISOString();
+      let subject = 'Red River Cantina Reservation Request';
+      if (name) subject += ` - ${name}`;
+      if (date) subject += ` - ${date}`;
+      subject += ` - ${timestamp}`;
+      formData.set('_subject', subject);
+
+      messageDiv.textContent = 'Submitting your reservation...';
+      messageDiv.setAttribute('data-visible', 'true');
+      messageDiv.className = 'reservation-form__message reservation-form__message--info';
+
+      try {
+        const response = await fetch(reservationForm.action, {
+          method: reservationForm.method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          messageDiv.textContent = 'Thank you! Your reservation request has been submitted. We will contact you shortly to confirm.';
+          messageDiv.className = 'reservation-form__message reservation-form__message--success';
+          reservationForm.reset();
+          
+          setTimeout(() => {
+            closeReservationModal();
+            setTimeout(() => {
+              messageDiv.textContent = '';
+              messageDiv.className = 'reservation-form__message';
+              messageDiv.setAttribute('data-visible', 'false');
+            }, 300);
+          }, 3000);
+        } else {
+          // If fetch fails, try traditional form submission
+          messageDiv.textContent = 'Redirecting to complete your reservation...';
+          setTimeout(() => {
+            reservationForm.target = '_blank';
+            reservationForm.submit();
+            messageDiv.textContent = 'Thank you! Your reservation form has been submitted. Please check the new tab and contact us at 346-279-1192 to confirm.';
+            messageDiv.className = 'reservation-form__message reservation-form__message--success';
+            setTimeout(closeReservationModal, 2000);
+          }, 1000);
+        }
+      } catch (error) {
+        console.error('Reservation form error:', error);
+        // Fallback to traditional form submission
+        messageDiv.textContent = 'Redirecting to complete your reservation...';
+        setTimeout(() => {
+          reservationForm.target = '_blank';
+          reservationForm.submit();
+          messageDiv.textContent = 'Thank you! Your reservation form has been submitted. Please check the new tab to confirm or call us at 346-279-1192.';
+          messageDiv.className = 'reservation-form__message reservation-form__message--success';
+          setTimeout(closeReservationModal, 2000);
+        }, 1000);
+      }
+    });
+  }
+
+  // Handle ESC key to close reservation modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (document.getElementById(RESERVATION_MODAL_ID)?.getAttribute('data-visible') === 'true') {
+        closeReservationModal();
+      }
+    }
+  });
 });

@@ -271,6 +271,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Sunshine & Patio Energy</p>
               <h1>Fresh Tex-Mex, Margaritas & Good Times</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-2">
@@ -278,6 +279,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Authentic Flavors</p>
               <h1>Where Every Meal Feels Like a Fiesta</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-3">
@@ -285,6 +287,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Family Tradition</p>
               <h1>Serving League City Since 2002</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-4">
@@ -292,6 +295,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Fresh Daily</p>
               <h1>Made From Scratch Every Day</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-5">
@@ -299,6 +303,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Signature Cocktails</p>
               <h1>Handcrafted Margaritas & More</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-6">
@@ -306,6 +311,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Perfect Setting</p>
               <h1>Dine In or Take Out</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-7">
@@ -313,6 +319,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Delicious Dishes</p>
               <h1>Taste the Difference</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-8">
@@ -320,6 +327,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Traditional Recipes</p>
               <h1>Flavors That Bring People Together</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-9">
@@ -327,6 +335,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Great Atmosphere</p>
               <h1>Your Go-To Tex-Mex Destination</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-10">
@@ -334,6 +343,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Vibrant Dining</p>
               <h1>Experience Authentic Tex-Mex</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-11">
@@ -341,6 +351,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Local Favorite</p>
               <h1>More Than Just Great Food</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-slide slide-12">
@@ -348,6 +359,7 @@
             <div class="container carousel-content">
               <p class="eyebrow">Special Occasions</p>
               <h1>Perfect For Any Celebration</h1>
+              <button class="btn btn-modern" data-reservation-open aria-label="Make a reservation">Make a Reservation</button>
             </div>
           </div>
           <div class="carousel-indicators">
@@ -596,6 +608,67 @@
           <textarea id="managementMessage" name="message" rows="4" required></textarea>
 
           <button type="submit" class="btn btn-modern">Send Message to Management</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div class="reservation-modal" id="reservation-modal" aria-hidden="true" role="dialog" aria-labelledby="reservation-modal-title">
+      <div class="reservation-modal__dialog" tabindex="-1">
+        <button type="button" class="reservation-modal__close" data-reservation-close aria-label="Close reservation form">×</button>
+        <h2 class="reservation-modal__title" id="reservation-modal-title">Make a Reservation</h2>
+        <p class="reservation-modal__subtitle">Red River Cantina - League City, TX</p>
+        <form class="reservation-form" id="reservation-form" action="https://formspree.io/f/mvzwywrg" method="POST">
+          <input type="hidden" name="_subject" value="Reservation Request - Red River Cantina League City">
+          <input type="text" name="_gotcha" style="display:none !important">
+          <div class="reservation-form__row">
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-name">Name</label>
+              <input type="text" id="res-name" name="name" class="reservation-form__input" required placeholder="Your name">
+            </div>
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-phone">Phone</label>
+              <input type="tel" id="res-phone" name="phone" class="reservation-form__input" required placeholder="(123) 456-7890">
+            </div>
+          </div>
+          <div class="reservation-form__row">
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-email">Email</label>
+              <input type="email" id="res-email" name="email" class="reservation-form__input" required placeholder="your@email.com">
+            </div>
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-guests">Party Size</label>
+              <select id="res-guests" name="guests" class="reservation-form__select" required>
+                <option value="">Select</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="reservation-form__row">
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" class="reservation-form__input" required>
+            </div>
+            <div class="reservation-form__group">
+              <label class="reservation-form__label reservation-form__label--required" for="res-time">Time</label>
+              <input type="time" id="res-time" name="time" class="reservation-form__input" required>
+            </div>
+          </div>
+          <div class="reservation-form__group reservation-form__group--full">
+            <label class="reservation-form__label" for="res-notes">Special Requests (Optional)</label>
+            <textarea id="res-notes" name="notes" rows="3" class="reservation-form__textarea" placeholder="Any special occasions, dietary restrictions, or seating preferences?"></textarea>
+          </div>
+          <div class="reservation-form__message" id="reservation-message"></div>
+          <div class="reservation-form__actions">
+            <button type="submit" class="btn btn-modern">Submit Reservation</button>
+          </div>
         </form>
       </div>
     </div>
