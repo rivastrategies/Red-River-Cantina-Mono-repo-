@@ -534,3 +534,46 @@
   font-weight: 600;
   color: var(--ink);
 }
+
+/* Party Room Menu Styles */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-item-card {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.menu-item-card h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.menu-item-card p {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.menu-time {
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

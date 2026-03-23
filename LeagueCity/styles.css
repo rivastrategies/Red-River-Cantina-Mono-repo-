@@ -1253,7 +1253,79 @@ body {
 }
 
 .brand-footer {
-  padding: 2.5rem 0 2rem;
+  padding: 2rem 0 1.7rem;
+}
+
+/* Party Room Modal Form Styles */
+.party-modal__dialog {
+  width: min(560px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.party-modal__form {
+  text-align: left;
+}
+
+.party-modal__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.party-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.party-modal__field span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--charcoal);
+}
+
+.party-modal__field input,
+.party-modal__field textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.party-modal__field input:focus,
+.party-modal__field textarea:focus {
+  outline: none;
+  border-color: var(--teal-mid);
+  box-shadow: 0 0 0 3px rgba(17, 94, 89, 0.1);
+}
+
+.party-modal__field input::placeholder,
+.party-modal__field textarea::placeholder {
+  color: #999;
+}
+
+.party-modal__field--full {
+  margin-bottom: 1rem;
+}
+
+.party-modal__field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.party-modal__submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.party-modal__status {
+  margin: 0 0 0.85rem;
 }
 
 .footer-brands {
@@ -1331,6 +1403,68 @@ a.footer-brand-item:hover {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+.logos-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.location-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+a.location-logo:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.logo-image {
+  height: 80px;
+  max-width: 160px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+}
+
+.location-text {
+  color: #f1fffb;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.links-row {
+  margin-top: 1.15rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.links-row a {
+  text-decoration: none;
+  color: #f1fff9;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.16);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .footer-icon {
   display: inline-flex;
   align-items: center;
@@ -1361,6 +1495,20 @@ a.footer-brand-item:hover {
   .footer-brands {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+
+  .logos-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .logo-image {
+    height: 65px;
+    max-width: 130px;
+  }
+
+  .location-text {
+    font-size: 0.65rem;
   }
 
   .heritage-feature-grid,
@@ -1396,6 +1544,30 @@ a.footer-brand-item:hover {
 
   .footer-brand-logo {
     height: 60px;
+  }
+
+  .logos-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .logo-image {
+    height: 55px;
+    max-width: 110px;
+  }
+
+  .location-text {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .party-modal__row {
+    grid-template-columns: 1fr;
+  }
+  
+  .party-modal__dialog {
+    padding: 2rem 1.5rem;
   }
 }
 
