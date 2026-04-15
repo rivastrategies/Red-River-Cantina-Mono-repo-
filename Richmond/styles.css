@@ -959,6 +959,18 @@ body {
   background: rgba(255, 255, 255, 0.28);
 }
 
+.btn-delivery {
+  background: #d32f2f;
+  color: #ffffff;
+  border-color: #d32f2f;
+}
+
+.btn-delivery:hover {
+  background: #b71c1c;
+  border-color: #b71c1c;
+  box-shadow: 0 10px 24px rgba(211, 47, 47, 0.3);
+}
+
 .btn-sm {
   min-width: 0;
   padding: 0.58rem 0.8rem;

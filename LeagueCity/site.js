@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ORDER_MODAL_ID = 'order-modal';
   const pickupUrl = 'https://order.redriverrestaurants.com/order/redrivercantina';
   const deliveryUrl = 'https://order.online/store/red-river-cantina-league-city-582276?delivery=true&hideModal=true';
+  const reservationUrl = 'https://tables.toasttab.com/restaurants/44cd660c-07da-4eb8-8746-95287465bbcd/findTime';
   const modalMarkup = `
     <div class="order-modal" id="${ORDER_MODAL_ID}" aria-hidden="true" role="dialog" aria-labelledby="order-modal-title">
       <div class="order-modal__dialog" tabindex="-1">
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="order-modal__subtitle">Choose how you would like to enjoy Red River Cantina from our League City location.</p>
         <div class="order-modal__actions">
           <a class="btn btn-modern order-modal__primary" href="${pickupUrl}" target="_blank" rel="noopener">Pickup</a>
-          <a class="btn btn-outline" href="${deliveryUrl}" target="_blank" rel="noopener">Delivery</a>
+          <a class="btn btn-delivery" href="${deliveryUrl}" target="_blank" rel="noopener">Delivery</a>
         </div>
       </div>
     </div>
@@ -159,6 +160,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', keydownHandler);
   };
+
+  const restoreHeroReservationButtons = () => {
+    const heroActionGroups = document.querySelectorAll('.home-hero-carousel .hero-order-actions');
+    heroActionGroups.forEach((group) => {
+      if (group.querySelector('a[aria-label="Make a reservation"]')) {
+        return;
+      }
+
+      const reservationLink = document.createElement('a');
+      reservationLink.href = reservationUrl;
+      reservationLink.className = 'btn btn-modern';
+      reservationLink.target = '_blank';
+      reservationLink.rel = 'noopener noreferrer';
+      reservationLink.setAttribute('aria-label', 'Make a reservation');
+      reservationLink.textContent = 'Make a Reservation';
+      group.prepend(reservationLink);
+    });
+  };
+
+  restoreHeroReservationButtons();
 
   const orderTriggers = document.querySelectorAll('[data-order-modal-trigger]');
   orderTriggers.forEach((trigger) => {
