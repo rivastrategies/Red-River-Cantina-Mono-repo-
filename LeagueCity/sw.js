@@ -1,11 +1,12 @@
 // Service Worker for Red River Cantina - League City
-const CACHE_NAME = 'rrc-lc-cache-v1';
+const CACHE_NAME = 'rrc-lc-cache-v2';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
   './RRCBrand.png',
-  './rrcLogo (1).png',
-  './kiersh co white trans.png',
+  './rrcLogo-optimized.webp',
+  './rrbbqbLogo-optimized.webp',
+  './kiersh-co-optimized.webp',
   './styles.css',
   './cantina-theme.css'
 ];

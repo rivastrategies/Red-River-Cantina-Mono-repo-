@@ -806,6 +806,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Handle reservat ion form submission
   const reservationForm = document.getElementById('reservation-form');
   if (reservationForm) {
+    const reservationDateInput = reservationForm.querySelector('input[name="date"]');
+    if (reservationDateInput) {
+      const now = new Date();
+      const localToday = new Date(now.getTime() - now.getTimezoneOffset() * 60000)
+        .toISOString()
+        .split('T')[0];
+      reservationDateInput.min = localToday;
+    }
+
     reservationForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       
