@@ -396,7 +396,7 @@ body {
 
 .home-hero-carousel .slide-1 {
   animation-delay: 0s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Cantina Spread.webp');
   background-size: cover;
   background-position: center;
@@ -405,7 +405,7 @@ body {
 
 .home-hero-carousel .slide-2 {
   animation-delay: 3s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Crawfish ench.webp');
   background-size: cover;
   background-position: center;
@@ -414,7 +414,7 @@ body {
 
 .home-hero-carousel .slide-3 {
   animation-delay: 6s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Fajitas.webp');
   background-size: cover;
   background-position: center;
@@ -423,7 +423,7 @@ body {
 
 .home-hero-carousel .slide-4 {
   animation-delay: 9s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Jara.webp');
   background-size: cover;
   background-position: center;
@@ -432,7 +432,7 @@ body {
 
 .home-hero-carousel .slide-5 {
   animation-delay: 12s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Lobster Special.webp');
   background-size: cover;
   background-position: center;
@@ -441,7 +441,7 @@ body {
 
 .home-hero-carousel .slide-6 {
   animation-delay: 15s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Lobster9.webp');
   background-size: cover;
   background-position: center;
@@ -450,7 +450,7 @@ body {
 
 .home-hero-carousel .slide-7 {
   animation-delay: 18s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Salmon Lobster.webp');
   background-size: cover;
   background-position: center;
@@ -459,7 +459,7 @@ body {
 
 .home-hero-carousel .slide-8 {
   animation-delay: 21s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Salmon Salad Outside.webp');
   background-size: cover;
   background-position: center;
@@ -468,7 +468,7 @@ body {
 
 .home-hero-carousel .slide-9 {
   animation-delay: 24s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Salmonsalad.webp');
   background-size: cover;
   background-position: center;
@@ -477,7 +477,7 @@ body {
 
 .home-hero-carousel .slide-10 {
   animation-delay: 27s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Shrimp Faitas 2.webp');
   background-size: cover;
   background-position: center;
@@ -486,7 +486,7 @@ body {
 
 .home-hero-carousel .slide-11 {
   animation-delay: 30s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Shrimp Salad22.webp');
   background-size: cover;
   background-position: center;
@@ -495,7 +495,7 @@ body {
 
 .home-hero-carousel .slide-12 {
   animation-delay: 33s;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('./homepagehero/Sombrero.webp');
   background-size: cover;
   background-position: center;
@@ -519,7 +519,8 @@ body {
   color: white;
 }
 
-.home-hero-carousel .carousel-content h1 {
+.home-hero-carousel .carousel-content h1,
+.home-hero-carousel .carousel-content h2 {
   margin: 0.4rem 0 0;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -1154,7 +1155,7 @@ body {
   .party-modal__row {
     grid-template-columns: 1fr;
   }
-  
+
   .party-modal__dialog {
     padding: 2rem 1.5rem;
   }
@@ -1263,7 +1264,7 @@ body {
   .concerns-modal__row {
     grid-template-columns: 1fr;
   }
-  
+
   .concerns-modal__dialog {
     padding: 2rem 1.5rem;
   }
@@ -1357,7 +1358,7 @@ body {
   .catering-modal__dialog {
     padding: 2rem 1.5rem;
   }
-  
+
   .catering-modal__content h2 {
     font-size: 1.7rem;
   }
