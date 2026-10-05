@@ -720,6 +720,8 @@ document.addEventListener('DOMContentLoaded', () => {
         formType = 'Careers Application';
       } else if (action.includes('xjgarabb') || formData.get('form_name') === 'Community') {
         formType = 'Community Spirit Night Application';
+      } else if (action.includes('xqeyblgw') || formData.get('form_name') === 'Catering') {
+        formType = 'Catering Inquiry';
       }
       
       let subject = `Red River Cantina ${formType}`;
