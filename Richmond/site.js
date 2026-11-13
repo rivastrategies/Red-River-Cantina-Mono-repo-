@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         partyForm.reset();
-        setPartyStatus('is-success', 'Thanks for contacting Red River BBQ about the Party Room. Our team will follow up shortly.');
+        setPartyStatus('is-success', 'Thanks for contacting Red River Cantina about the Party Room. Our team will follow up shortly.');
       } catch (_error) {
         setPartyStatus('is-error', 'There was a problem sending your inquiry. Please try again or call us at 346-279-1192.');
       } finally {
