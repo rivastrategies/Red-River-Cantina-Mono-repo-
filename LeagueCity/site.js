@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
           showFormStatus(
             partyRoomForm,
             'success',
-            'Thanks for contacting Red River BBQ about the Party Room. Our team will follow up shortly.'
+            'Thanks for contacting Red River Cantina about the Party Room. Our team will follow up shortly.'
           );
           partyRoomForm.reset();
         } else {
